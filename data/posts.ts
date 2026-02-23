@@ -54,9 +54,9 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "The opening comment literally couldn\u2019t see the point. GitHub was perceived as \u2018just a git host\u2019 \u2014 the social layer, the network effects, the open source ecosystem it would enable were all invisible.",
+      "The opening comment literally couldn\u2019t see the point. GitHub was perceived as \u2018just a git host\u2019 \u2014 the social layer and the network effects were invisible.",
     outcome:
-      "Microsoft acquired GitHub in 2018 for $7.5 billion. GitHub now hosts 100M+ developers and 420M+ repositories. It became the connective tissue of the entire software industry.",
+      "Microsoft acquired GitHub in 2018 for $7.5 billion. GitHub now hosts 100M+ developers and 420M+ repositories.",
     pattern: "build-it-yourself",
   },
   {
@@ -109,7 +109,7 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "The name \u2014 the name! \u2014 was the biggest objection. Nobody could get past it. Meanwhile, Google itself was once mocked for being a misspelling of a number.",
+      "The name. That was the biggest objection. Nobody could get past it. Meanwhile, Google itself was once mocked for being a misspelling of a number.",
     outcome:
       "DuckDuckGo grew to over 100 million daily search queries and became the default search engine in many privacy-focused browsers. Valued at over $600 million.",
     pattern: "drive-by-dismissal",
@@ -144,7 +144,7 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "Two months after this thread, Uber received an actual cease-and-desist from San Francisco \u2014 seemingly validating every skeptic. Travis Kalanick\u2019s response was to ignore it and expand to five more cities.",
+      "Two months after this thread, Uber received an actual cease-and-desist from San Francisco, seemingly validating every skeptic. Travis Kalanick\u2019s response was to ignore it and expand to five more cities.",
     outcome:
       "Uber IPO\u2019d in 2019 and is now worth over $160 billion. NYC taxi medallions, which sold for $1.3M in 2014, collapsed to under $80K. The regulation that was supposed to stop Uber became its origin story.",
     pattern: "its-illegal",
@@ -175,7 +175,7 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "The top comment sided with the skeptics. Commenters argued Airbnb couldn\u2019t scale, couldn\u2019t survive regulation, and couldn\u2019t solve the fundamental trust problem of sleeping in a stranger\u2019s home.",
+      "The top comment sided with the skeptics. Commenters argued Airbnb couldn\u2019t scale and couldn\u2019t solve the trust problem of sleeping in a stranger\u2019s home.",
     outcome:
       "Airbnb IPO\u2019d in 2020 at a $100B+ valuation and is now worth over $80 billion. One of YC\u2019s most successful companies ever.",
     pattern: "its-illegal",
@@ -272,7 +272,7 @@ export const posts: Post[] = [
     editorialContext:
       "Commenters argued the abstraction layer couldn\u2019t work across fundamentally different analytics providers. The founders later wrote \u2018From Show HN to Series D.\u2019",
     outcome:
-      "Segment was acquired by Twilio for $3.2 billion in 2020 \u2014 one of the largest acquisitions in developer tooling history.",
+      "Segment was acquired by Twilio for $3.2 billion in 2020, the largest acquisition in developer tooling at the time.",
     pattern: "wrong-approach",
   },
   {
@@ -299,7 +299,7 @@ export const posts: Post[] = [
     editorialContext:
       "Microsoft + new language + compile-to-JS triggered every distrust reflex at once. The phrase \u2018damned fool\u2019 was deployed with full sincerity.",
     outcome:
-      "TypeScript is now used by 80%+ of JavaScript developers and is the default language for virtually every major web framework. It\u2019s arguably the most impactful programming language of the 2010s.",
+      "TypeScript is now used by 80%+ of JavaScript developers and is the default language for virtually every major web framework.",
     pattern: "nobody-wants-this",
   },
   {
@@ -363,9 +363,9 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "Commenters couldn\u2019t figure out what Product Hunt was after 30 seconds. It went on to become the definitive launchpad for tech products.",
+      "Commenters couldn\u2019t figure out what Product Hunt was after 30 seconds. It went on to become the default place to launch a tech product.",
     outcome:
-      "Product Hunt became the go-to platform for launching tech products, was accepted into Y Combinator, raised from Andreessen Horowitz, and was acquired by AngelList.",
+      "Product Hunt was accepted into Y Combinator, raised from Andreessen Horowitz, and was later acquired by AngelList.",
     pattern: "drive-by-dismissal",
   },
   {
@@ -397,7 +397,7 @@ export const posts: Post[] = [
     editorialContext:
       "Commenters predicted zero market demand. The \u2018better spreadsheet\u2019 category was seen as a graveyard of failed attempts.",
     outcome:
-      "Airtable reached an $11 billion valuation and is used by over 300,000 organizations including Netflix, Shopify, and Nike. It created an entirely new product category.",
+      "Airtable reached an $11 billion valuation and is used by over 300,000 organizations.",
     pattern: "tried-before",
   },
   {
@@ -468,7 +468,7 @@ export const posts: Post[] = [
     editorialContext:
       "The exact same \u2018separation of concerns\u2019 argument was levelled against React in 2013. HN missed it twice.",
     outcome:
-      "Tailwind CSS became the most-downloaded CSS framework in the world with 100M+ npm downloads per month. It\u2019s now the default styling choice for millions of developers, used by Shopify, OpenAI, Netflix, and GitHub itself.",
+      "Tailwind CSS became the most-downloaded CSS framework in the world with 100M+ npm downloads per month. It\u2019s now the default CSS framework, period.",
     pattern: "wrong-approach",
   },
   {
@@ -497,7 +497,7 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "A VC-backed terminal? Requiring login? With telemetry? HN reached for the pitchforks. The thread read like a restraining order.",
+      "A VC-backed terminal that requires login and collects telemetry? HN reached for the pitchforks. The thread read like a restraining order.",
     outcome:
       "Warp raised a $50M Series B led by Sequoia Capital and grew to over 500,000 engineers on the platform.",
     pattern: "wrong-approach",
@@ -525,9 +525,9 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "One commenter preemptively grouped Bun with Parcel and Rome.js \u2014 ambitious projects that burned out. 1,431 upvotes said otherwise.",
+      "One commenter preemptively grouped Bun with Parcel and Rome.js, ambitious projects that burned out. 1,431 upvotes said otherwise.",
     outcome:
-      "Bun 1.0 shipped 14 months later. In December 2025, Bun was acquired by Anthropic to power Claude Code, Claude Agent SDK, and future AI coding products.",
+      "Bun 1.0 shipped 14 months later. In December 2025, Bun was acquired by Anthropic to power Claude Code and its AI coding infrastructure.",
     pattern: "tried-before",
   },
   {
@@ -556,9 +556,9 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "Posted the same day ChatGPT launched. Commenters called it dull, filtered, and delusional \u2014 the same day the fastest-growing consumer app in history was born.",
+      "Posted the same day ChatGPT launched. Commenters called it dull, filtered, and delusional. It hit 100 million users in two months.",
     outcome:
-      "ChatGPT became the fastest-growing consumer app in history \u2014 100 million users in 2 months. OpenAI reached a $157B valuation.",
+      "OpenAI reached a $157B valuation. ChatGPT now has 400M+ weekly active users.",
     pattern: "nobody-wants-this",
   },
   {
@@ -649,9 +649,9 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "Critics focused on rate limits and cost. The thread got 2,127 points and 963 comments \u2014 a sign of just how much people actually cared.",
+      "Critics focused on rate limits and cost. The thread got 2,127 points and 963 comments. People cared more than they let on.",
     outcome:
-      "Claude Code hit $1B in annualized revenue within 6 months of GA \u2014 faster than ChatGPT. By early 2026 it surpassed $2.5B ARR.",
+      "Claude Code hit $1B in annualized revenue within 6 months of GA, faster than ChatGPT. By early 2026 it surpassed $2.5B ARR.",
     pattern: "wrong-approach",
   },
   {
@@ -684,9 +684,9 @@ export const posts: Post[] = [
       },
     ],
     editorialContext:
-      "The project hit 60,000 GitHub stars overnight. Critics called it hype \u2014 then Anthropic asked for a name change, and OpenAI acquired the creator.",
+      "The project hit 60,000 GitHub stars overnight. Critics called it hype. Then Anthropic asked for a name change, and OpenAI acquired the creator.",
     outcome:
-      "Creator Peter Steinberger joined OpenAI to work on AI agents. The project surpassed 145,000+ GitHub stars and spawned an entire ecosystem of derivative projects.",
+      "Creator Peter Steinberger joined OpenAI to work on AI agents. The project surpassed 145,000+ GitHub stars and spawned dozens of derivative projects.",
     pattern: "hype-cycle",
   },
 ];
