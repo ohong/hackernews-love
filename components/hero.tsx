@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section id="home" data-section className="relative flex min-h-screen snap-start flex-col items-center justify-center px-6">
+    <section id="home" data-section className="relative flex min-h-screen flex-col items-center justify-center px-6">
       <h1 className="max-w-3xl text-center font-serif text-5xl leading-[1.1] tracking-tight text-foreground md:text-8xl">
         Every great project was once called{" "}
         <em className="italic">a bad idea</em>

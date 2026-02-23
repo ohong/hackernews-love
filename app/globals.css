@@ -33,11 +33,3 @@ body {
   color: var(--foreground);
 }
 
-/* Hide scrollbar for the snap container */
-.snap-container {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.snap-container::-webkit-scrollbar {
-  display: none;
-}

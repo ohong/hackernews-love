@@ -5,7 +5,7 @@ export function PostCard({ post }: { post: Post }) {
     <section
       id={post.id}
       data-section
-      className="group relative flex min-h-screen snap-start flex-col items-center justify-center px-6 py-20"
+      className="group relative flex min-h-screen flex-col items-center justify-center px-6 py-20"
     >
       {/* Company name — large ghosted text behind */}
       <h2 className="text-center font-serif text-5xl font-semibold tracking-tight text-foreground md:text-6xl lg:text-7xl">

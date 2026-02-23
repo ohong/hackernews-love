@@ -527,7 +527,7 @@ export const posts: Post[] = [
     editorialContext:
       "One commenter preemptively grouped Bun with Parcel and Rome.js \u2014 ambitious projects that burned out. 1,431 upvotes said otherwise.",
     outcome:
-      "Bun 1.0 shipped 14 months later. It\u2019s now a legitimate Node.js alternative with 80,000+ GitHub stars, backed by $7M+ in funding, and used in production worldwide.",
+      "Bun 1.0 shipped 14 months later. In December 2025, Bun was acquired by Anthropic to power Claude Code, Claude Agent SDK, and future AI coding products.",
     pattern: "tried-before",
   },
   {
