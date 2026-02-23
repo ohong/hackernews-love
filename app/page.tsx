@@ -12,7 +12,7 @@ export default function Home() {
       <TopBar />
       <div
         id="scroll-container"
-        className="snap-container flex-1 min-w-0 h-screen snap-y snap-mandatory overflow-y-scroll"
+        className="snap-container flex-1 min-w-0 h-screen md:snap-y md:snap-mandatory overflow-y-scroll"
       >
         <Hero />
         {posts.map((post) => (
