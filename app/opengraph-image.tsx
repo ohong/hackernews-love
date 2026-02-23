@@ -15,42 +15,122 @@ export default async function Image() {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "80px",
+          padding: "64px 80px",
+          justifyContent: "space-between",
         }}
       >
         <div
           style={{
-            fontSize: 72,
-            fontWeight: 600,
-            color: "#f0eee6",
-            marginBottom: 24,
-          }}
-        >
-          hackernews.love
-        </div>
-        <div
-          style={{
-            fontSize: 32,
-            color: "#9b9790",
-            fontStyle: "italic",
-          }}
-        >
-          {"Every great company was once someone\u2019s bad idea."}
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 60,
             display: "flex",
-            alignItems: "center",
-            gap: 12,
+            flexDirection: "column",
+            gap: 28,
           }}
         >
-          <span style={{ fontSize: 20, color: "#7a7772" }}>
-            A love letter to builders
-          </span>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-end",
+            }}
+          >
+            <div
+              style={{
+                fontSize: 42,
+                color: "#f0eee6",
+                fontStyle: "italic",
+              }}
+            >
+              {"\u201CMEH.\u201D"}
+            </div>
+            <div style={{ fontSize: 20, color: "#7a7772" }}>
+              {"on Figma \u2014 now worth $60B"}
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-end",
+            }}
+          >
+            <div
+              style={{
+                fontSize: 42,
+                color: "#f0eee6",
+                fontStyle: "italic",
+              }}
+            >
+              {"\u201CStop ruining JS!\u201D"}
+            </div>
+            <div style={{ fontSize: 20, color: "#7a7772" }}>
+              {"on React \u2014 20M+ developers"}
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-end",
+            }}
+          >
+            <div
+              style={{
+                fontSize: 42,
+                color: "#f0eee6",
+                fontStyle: "italic",
+              }}
+            >
+              {"\u201CMind-numbingly dull.\u201D"}
+            </div>
+            <div style={{ fontSize: 20, color: "#7a7772" }}>
+              {"on ChatGPT \u2014 100M users in 2 months"}
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 16,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              height: 1,
+              background: "#3a3836",
+            }}
+          />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-end",
+            }}
+          >
+            <div
+              style={{
+                fontSize: 40,
+                color: "#f0eee6",
+                fontWeight: 600,
+              }}
+            >
+              hackernews.love
+            </div>
+            <div
+              style={{
+                fontSize: 20,
+                color: "#9b9790",
+                fontStyle: "italic",
+              }}
+            >
+              {"Every great company was once someone\u2019s bad idea."}
+            </div>
+          </div>
         </div>
       </div>
     ),

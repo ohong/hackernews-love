@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen snap-start flex-col items-center justify-center px-6">
+    <section id="home" data-section className="relative flex min-h-screen snap-start flex-col items-center justify-center px-6">
       <h1 className="font-serif text-6xl font-semibold tracking-tight text-foreground md:text-8xl">
         hackernews.love
       </h1>

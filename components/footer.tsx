@@ -12,7 +12,7 @@ const suggestUrl =
 
 export function Footer() {
   return (
-    <section className="flex min-h-screen snap-start flex-col items-center justify-center px-6">
+    <section id="footer" data-section className="flex min-h-screen snap-start flex-col items-center justify-center px-6">
       <p className="max-w-md text-center font-serif text-xl italic leading-relaxed text-muted md:text-2xl">
         &ldquo;For the broader community, I think the takeaway is intentionally
         being almost unreasonably supportive of people building things.&rdquo;
