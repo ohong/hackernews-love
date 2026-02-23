@@ -4,6 +4,7 @@ export const posts: Post[] = [
   {
     id: "dropbox",
     companyName: "Dropbox",
+    month: "April",
     year: 2007,
     hnThreadUrl: "https://news.ycombinator.com/item?id=8863",
     hnPostTitle: "My YC app: Dropbox \u2013 Throw away your USB drive",
@@ -34,6 +35,7 @@ export const posts: Post[] = [
   {
     id: "github",
     companyName: "GitHub",
+    month: "April",
     year: 2008,
     hnThreadUrl: "https://news.ycombinator.com/item?id=160162",
     hnPostTitle: "GitHub now open to everyone. Here is the pricing.",
@@ -60,6 +62,7 @@ export const posts: Post[] = [
   {
     id: "bitcoin",
     companyName: "Bitcoin",
+    month: "June",
     year: 2009,
     hnThreadUrl: "https://news.ycombinator.com/item?id=599852",
     hnPostTitle:
@@ -81,8 +84,40 @@ export const posts: Post[] = [
     pattern: "nobody-wants-this",
   },
   {
+    id: "duckduckgo",
+    companyName: "DuckDuckGo",
+    month: "February",
+    year: 2009,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=460877",
+    hnPostTitle: "DuckDuckGo \u2013 a new search engine",
+    dismissiveQuotes: [
+      {
+        text: "I can\u2019t ever see anyone saying \u2018just duckduckgo it.\u2019 The name just sounds silly. It makes me think it\u2019s a search engine for toddlers.",
+        author: "mattmaroon",
+      },
+      {
+        text: "DuckDuckGo is childish. I think that name will hold them back.",
+        author: "mattmaroon",
+      },
+      {
+        text: "How many people would go to Google and search for \u2018new search engine\u2019? DuckDuckGo is not even in the top 10 pages.",
+        author: "vaksel",
+      },
+      {
+        text: "I don\u2019t find their actual search engine very useful at all.",
+        author: "petercooper",
+      },
+    ],
+    editorialContext:
+      "The name \u2014 the name! \u2014 was the biggest objection. Nobody could get past it. Meanwhile, Google itself was once mocked for being a misspelling of a number.",
+    outcome:
+      "DuckDuckGo grew to over 100 million daily search queries and became the default search engine in many privacy-focused browsers. Valued at over $600 million.",
+    pattern: "drive-by-dismissal",
+  },
+  {
     id: "uber",
     companyName: "Uber",
+    month: "September",
     year: 2010,
     hnThreadUrl: "https://news.ycombinator.com/item?id=1649136",
     hnPostTitle: "UberCab to disrupt the Taxi/Limo business",
@@ -117,6 +152,7 @@ export const posts: Post[] = [
   {
     id: "airbnb",
     companyName: "Airbnb",
+    month: "March",
     year: 2011,
     hnThreadUrl: "https://news.ycombinator.com/item?id=2337093",
     hnPostTitle: "Airbnb",
@@ -147,6 +183,7 @@ export const posts: Post[] = [
   {
     id: "stripe",
     companyName: "Stripe",
+    month: "October",
     year: 2011,
     hnThreadUrl: "https://news.ycombinator.com/item?id=3053883",
     hnPostTitle: "Stripe: instant payment processing for developers",
@@ -177,6 +214,7 @@ export const posts: Post[] = [
   {
     id: "instacart",
     companyName: "Instacart",
+    month: "August",
     year: 2012,
     hnThreadUrl: "https://news.ycombinator.com/item?id=4388793",
     hnPostTitle:
@@ -208,6 +246,7 @@ export const posts: Post[] = [
   {
     id: "segment",
     companyName: "Segment",
+    month: "November",
     year: 2012,
     hnThreadUrl: "https://news.ycombinator.com/item?id=4912076",
     hnPostTitle:
@@ -237,8 +276,36 @@ export const posts: Post[] = [
     pattern: "wrong-approach",
   },
   {
+    id: "typescript",
+    companyName: "TypeScript",
+    month: "October",
+    year: 2012,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=4597716",
+    hnPostTitle: "TypeScript: JavaScript Development at Application Scale",
+    dismissiveQuotes: [
+      {
+        text: "I think you\u2019d be a damned fool to invest in this technology for any serious project. Right now this is a toy.",
+        author: "oinksoft",
+      },
+      {
+        text: "I have more than a sneaking suspicion that this project is essentially a proof-of-concept, and that it is not heavily used at Microsoft.",
+        author: "oinksoft",
+      },
+      {
+        text: "Where\u2019s all that great refactoring support if everything is made dynamic and stringly typed?",
+        author: "skrebbel",
+      },
+    ],
+    editorialContext:
+      "Microsoft + new language + compile-to-JS triggered every distrust reflex at once. The phrase \u2018damned fool\u2019 was deployed with full sincerity.",
+    outcome:
+      "TypeScript is now used by 80%+ of JavaScript developers and is the default language for virtually every major web framework. It\u2019s arguably the most impactful programming language of the 2010s.",
+    pattern: "nobody-wants-this",
+  },
+  {
     id: "react",
     companyName: "React",
+    month: "June",
     year: 2013,
     hnThreadUrl: "https://news.ycombinator.com/item?id=5789055",
     hnPostTitle: "React: Facebook\u2019s latest open source JavaScript library",
@@ -273,6 +340,7 @@ export const posts: Post[] = [
   {
     id: "product-hunt",
     companyName: "Product Hunt",
+    month: "February",
     year: 2014,
     hnThreadUrl: "https://news.ycombinator.com/item?id=7144815",
     hnPostTitle: "Show HN: Product Hunt \u2013 Hacker News for Products",
@@ -301,8 +369,41 @@ export const posts: Post[] = [
     pattern: "drive-by-dismissal",
   },
   {
+    id: "airtable",
+    companyName: "Airtable",
+    month: "September",
+    year: 2014,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=8373914",
+    hnPostTitle:
+      "Show HN: Airtable, a real-time spreadsheet-database hybrid",
+    dismissiveQuotes: [
+      {
+        text: "No way this a spreadsheet. This is just a CRUD app with data displayed in rows. Zero chance of catching with spreadsheet users.",
+        author: "fiatjaf",
+      },
+      {
+        text: "The demand for an Access-like or \u2018better spreadsheet\u2019 product is all of the \u2018Oh yeah, it sounds cool\u2019 variety that never results in sales.",
+        author: "sedachv",
+      },
+      {
+        text: "Very difficult to get non technical peeps just suddenly ditch spreadsheets.",
+        author: "livestyle",
+      },
+      {
+        text: "Your app seems sluggish to scroll compared to Google Docs at that size, and the record density seems low.",
+        author: "Erwin",
+      },
+    ],
+    editorialContext:
+      "Commenters predicted zero market demand. The \u2018better spreadsheet\u2019 category was seen as a graveyard of failed attempts.",
+    outcome:
+      "Airtable reached an $11 billion valuation and is used by over 300,000 organizations including Netflix, Shopify, and Nike. It created an entirely new product category.",
+    pattern: "tried-before",
+  },
+  {
     id: "figma",
     companyName: "Figma",
+    month: "November",
     year: 2015,
     hnThreadUrl: "https://news.ycombinator.com/item?id=10685407",
     hnPostTitle: "Launch of Figma, a collaborative interface design tool",
@@ -337,7 +438,8 @@ export const posts: Post[] = [
   {
     id: "tailwind",
     companyName: "Tailwind CSS",
-    year: 2019,
+    month: "July",
+    year: 2020,
     hnThreadUrl: "https://news.ycombinator.com/item?id=24034453",
     hnPostTitle:
       "Tailwind CSS: From Side-Project Byproduct to Multi-Million Dollar Business",
@@ -370,8 +472,68 @@ export const posts: Post[] = [
     pattern: "wrong-approach",
   },
   {
+    id: "warp",
+    companyName: "Warp",
+    month: "April",
+    year: 2022,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=30921231",
+    hnPostTitle: "Show HN: Warp, a Rust-based terminal",
+    dismissiveQuotes: [
+      {
+        text: "No one should use a for-profit terminal emulator, especially one created by a VC-backed startup, full stop.",
+        author: "smt88",
+      },
+      {
+        text: "Downloaded the image, installed it and was greeted by a mandatory login. Next step was uninstall and delete the dmg image. What a waste of time.",
+        author: "lodovic",
+      },
+      {
+        text: "You like people to contribute for free but refuse to give them an actual FOSS client. This is bound to fail.",
+        author: "wildmanx",
+      },
+      {
+        text: "Warp\u2019s VC decide they want an exit and Warp becomes 50usd/month SaaS. Your workflow, scripts, etc. are basically dead.",
+        author: "wraptile",
+      },
+    ],
+    editorialContext:
+      "A VC-backed terminal? Requiring login? With telemetry? HN reached for the pitchforks. The thread read like a restraining order.",
+    outcome:
+      "Warp raised $78 million, grew to hundreds of thousands of users, and became the most popular modern terminal. Login removed, telemetry made optional \u2014 every criticism addressed.",
+    pattern: "wrong-approach",
+  },
+  {
+    id: "bun",
+    companyName: "Bun",
+    month: "July",
+    year: 2022,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=31993429",
+    hnPostTitle:
+      "Bun: Fast JavaScript runtime, transpiler, and NPM client written in Zig",
+    dismissiveQuotes: [
+      {
+        text: "I love these super-ambitious projects (see Parcel, Rome.js) because after several years they will still fail in many areas at once!",
+        author: "wonderbore",
+      },
+      {
+        text: "Moving to a reimplementation of core Node APIs is a terrifying prospect.",
+        author: "julienb_sea",
+      },
+      {
+        text: "Something has done a bit wrong if you\u2019re running any of those tools in production.",
+        author: "onion2k",
+      },
+    ],
+    editorialContext:
+      "One commenter preemptively grouped Bun with Parcel and Rome.js \u2014 ambitious projects that burned out. 1,431 upvotes said otherwise.",
+    outcome:
+      "Bun 1.0 shipped 14 months later. It\u2019s now a legitimate Node.js alternative with 80,000+ GitHub stars, backed by $7M+ in funding, and used in production worldwide.",
+    pattern: "tried-before",
+  },
+  {
     id: "chatgpt",
     companyName: "ChatGPT",
+    month: "December",
     year: 2022,
     hnThreadUrl: "https://news.ycombinator.com/item?id=33804874",
     hnPostTitle: "OpenAI ChatGPT: Optimizing language models for dialogue",
@@ -402,6 +564,7 @@ export const posts: Post[] = [
   {
     id: "cursor",
     companyName: "Cursor",
+    month: "March",
     year: 2023,
     hnThreadUrl: "https://news.ycombinator.com/item?id=35285047",
     hnPostTitle: "Cursor: A code editor built for programming with AI",
@@ -428,6 +591,7 @@ export const posts: Post[] = [
   {
     id: "windsurf",
     companyName: "Windsurf",
+    month: "November",
     year: 2024,
     hnThreadUrl: "https://news.ycombinator.com/item?id=42127882",
     hnPostTitle: "Show HN: Windsurf \u2014 Agentic IDE",
@@ -458,6 +622,7 @@ export const posts: Post[] = [
   {
     id: "claude-code",
     companyName: "Claude Code",
+    month: "February",
     year: 2025,
     hnThreadUrl: "https://news.ycombinator.com/item?id=43163011",
     hnPostTitle: "Claude 3.7 Sonnet and Claude Code",
@@ -488,6 +653,7 @@ export const posts: Post[] = [
   {
     id: "openclaw",
     companyName: "OpenClaw",
+    month: "February",
     year: 2026,
     hnThreadUrl: "https://news.ycombinator.com/item?id=46760237",
     hnPostTitle: "Clawdbot \u2013 open source personal AI assistant",

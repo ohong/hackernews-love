@@ -3,11 +3,13 @@ import { Hero } from "@/components/hero";
 import { PostCard } from "@/components/post-card";
 import { Footer } from "@/components/footer";
 import { SideNav } from "@/components/side-nav";
+import { TopBar } from "@/components/top-bar";
 
 export default function Home() {
   return (
     <div className="flex h-screen">
       <SideNav />
+      <TopBar />
       <div
         id="scroll-container"
         className="snap-container flex-1 min-w-0 h-screen snap-y snap-mandatory overflow-y-scroll"

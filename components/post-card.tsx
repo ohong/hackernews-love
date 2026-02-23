@@ -8,50 +8,50 @@ export function PostCard({ post }: { post: Post }) {
       rel="noopener noreferrer"
       id={post.id}
       data-section
-      className="group relative flex min-h-screen snap-start flex-col items-center justify-center px-6 py-16"
+      className="group relative flex min-h-screen snap-start flex-col items-center justify-center px-6 py-20"
     >
-      {/* Year */}
-      <span className="text-sm text-muted">{post.year}</span>
-
-      {/* Company name */}
-      <h2 className="mt-4 text-center font-serif text-5xl font-semibold text-foreground md:text-7xl">
+      {/* Company name — large ghosted text behind */}
+      <h2 className="text-center font-serif text-5xl font-semibold tracking-tight text-foreground md:text-6xl lg:text-7xl">
         {post.companyName}
       </h2>
 
-      {/* Quote cards */}
-      <div className="mt-8 flex w-full max-w-lg flex-col gap-4">
+      {/* Date */}
+      <span className="mt-3 text-sm tracking-wide text-muted/60">
+        {post.month} {post.year}
+      </span>
+
+      {/* Quotes — editorial pull-quote style */}
+      <div className="mt-12 flex w-full max-w-xl flex-col gap-10">
         {post.dismissiveQuotes.map((quote, i) => (
-          <div key={i} className="rounded-2xl border border-border bg-surface p-8">
-            <blockquote>
-              <p className="font-serif text-lg italic leading-relaxed text-foreground">
-                &ldquo;{quote.text}&rdquo;
-              </p>
-              <footer className="mt-4 text-sm text-muted">
-                &mdash; {quote.author}
-              </footer>
-            </blockquote>
-          </div>
+          <blockquote key={i} className="border-l-2 border-muted/20 pl-6">
+            <p className="font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
+              &ldquo;{quote.text}&rdquo;
+            </p>
+            <footer className="mt-3 text-sm text-muted/60">
+              &mdash; {quote.author}
+            </footer>
+          </blockquote>
         ))}
       </div>
 
       {/* Editorial context */}
-      <p className="mt-6 max-w-md text-center text-sm italic leading-relaxed text-muted">
+      <p className="mt-10 max-w-lg text-center font-serif text-base italic leading-[1.6] text-muted md:text-lg">
         {post.editorialContext}
       </p>
 
-      {/* What happened */}
-      <div className="mt-6 max-w-md text-center">
-        <p className="text-xs font-medium uppercase tracking-widest text-muted/50">
+      {/* What happened — boxed card */}
+      <div className="mt-10 w-full max-w-lg rounded-xl border border-border bg-surface px-8 py-6 text-center">
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted/50">
           What happened
         </p>
-        <p className="mt-2 text-sm leading-relaxed text-foreground">
+        <p className="mt-3 font-serif text-base leading-[1.6] text-foreground md:text-lg">
           {post.outcome}
         </p>
       </div>
 
       {/* CTA */}
-      <span className="mt-8 text-sm text-muted/60 transition-colors group-hover:text-foreground">
-        Read the thread &rarr;
+      <span className="mt-8 text-sm text-muted/40 transition-colors group-hover:text-foreground">
+        Read the post on HN &rarr;
       </span>
     </a>
   );

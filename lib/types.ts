@@ -15,6 +15,7 @@ export interface DismissiveQuote {
 export interface Post {
   id: string;
   companyName: string;
+  month: string;
   year: number;
   hnThreadUrl: string;
   hnPostTitle: string;

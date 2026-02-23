@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "hackernews.love \u2014 Every great company was once someone\u2019s bad idea";
+  "hackernews.love \u2014 Every great project was once called a bad idea";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -128,7 +128,7 @@ export default async function Image() {
                 fontStyle: "italic",
               }}
             >
-              {"Every great company was once someone\u2019s bad idea."}
+              {"Every great project was once called a bad idea."}
             </div>
           </div>
         </div>
