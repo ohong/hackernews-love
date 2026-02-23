@@ -499,7 +499,7 @@ export const posts: Post[] = [
     editorialContext:
       "A VC-backed terminal? Requiring login? With telemetry? HN reached for the pitchforks. The thread read like a restraining order.",
     outcome:
-      "Warp raised $78 million, grew to hundreds of thousands of users, and became the most popular modern terminal. Login removed, telemetry made optional \u2014 every criticism addressed.",
+      "Warp raised a $50M Series B led by Sequoia Capital and grew to over 500,000 engineers on the platform.",
     pattern: "wrong-approach",
   },
   {
