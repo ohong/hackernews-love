@@ -636,12 +636,16 @@ export const posts: Post[] = [
         author: "mianos",
       },
       {
-        text: "The biggest complaint I have is that we continuously hit the limit via the UI after even just a few intensive queries.",
-        author: "pookieinc",
+        text: "It's not hard to make, it's a relatively simple CLI tool so there's no moat.",
+        author: "sangnoir",
       },
       {
-        text: "The API could cost $100/hr. All of these coding tools seem to work only with the API and are therefore either too expensive or too limited.",
-        author: "raylad",
+        text: "Watching Claude Code fumble around... all while burning actual dollars and context is the opposite of endearing.",
+        author: "whywhywhywhy",
+      },
+      {
+        text: "Tried claude code, and have an empty unresponsive terminal. Looks cool in the demo though, but not sure this is going to perform better than Cursor, and shipping this as an interactive CLI instead of an extension is... a choice.",
+        author: "frankfrank13",
       },
     ],
     editorialContext:
