@@ -2,17 +2,21 @@ import { Post } from "@/lib/types";
 
 export function PostCard({ post }: { post: Post }) {
   return (
-    <a
-      href={post.hnThreadUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+    <section
       id={post.id}
       data-section
       className="group relative flex min-h-screen snap-start flex-col items-center justify-center px-6 py-20"
     >
       {/* Company name — large ghosted text behind */}
       <h2 className="text-center font-serif text-5xl font-semibold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-        {post.companyName}
+        <a
+          href={post.hnThreadUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          {post.companyName}
+        </a>
       </h2>
 
       {/* Date */}
@@ -50,9 +54,14 @@ export function PostCard({ post }: { post: Post }) {
       </div>
 
       {/* CTA */}
-      <span className="mt-8 text-sm text-muted/40 transition-colors group-hover:text-foreground">
+      <a
+        href={post.hnThreadUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 text-sm text-muted/40 transition-colors hover:text-foreground"
+      >
         Read the post on HN &rarr;
-      </span>
-    </a>
+      </a>
+    </section>
   );
 }
