@@ -111,7 +111,7 @@ export const posts: Post[] = [
     editorialContext:
       "The name. That was the biggest objection. Nobody could get past it. Meanwhile, Google itself was once mocked for being a misspelling of a number.",
     outcome:
-      "DuckDuckGo grew to over 100 million daily search queries and became the default search engine in many privacy-focused browsers. Valued at over $600 million.",
+      "DuckDuckGo grew to over 100 million daily search queries and became the default search engine in many privacy-focused browsers. In 2026, DuckDuckGo reported over 335 team members and an estimated 22.2 million average monthly active recipients in the EU as of June 2026.",
     pattern: "drive-by-dismissal",
   },
   {
@@ -146,7 +146,7 @@ export const posts: Post[] = [
     editorialContext:
       "Two months after this thread, Uber received an actual cease-and-desist from San Francisco, seemingly validating every skeptic. Travis Kalanick\u2019s response was to ignore it and expand to five more cities.",
     outcome:
-      "Uber IPO\u2019d in 2019 and is now worth over $160 billion. NYC taxi medallions, which sold for $1.3M in 2014, collapsed to under $80K. The regulation that was supposed to stop Uber became its origin story.",
+      "Uber IPO\u2019d in 2019 and had a market cap of about $141 billion on August 5, 2026. NYC taxi medallions, which sold for $1.3M in 2014, collapsed to under $80K. The regulation that was supposed to stop Uber became its origin story.",
     pattern: "its-illegal",
   },
   {
@@ -177,7 +177,7 @@ export const posts: Post[] = [
     editorialContext:
       "The top comment sided with the skeptics. Commenters argued Airbnb couldn\u2019t scale and couldn\u2019t solve the trust problem of sleeping in a stranger\u2019s home.",
     outcome:
-      "Airbnb IPO\u2019d in 2020 at a $100B+ valuation and is now worth over $80 billion. One of YC\u2019s most successful companies ever.",
+      "Airbnb IPO\u2019d in 2020 at a $100B+ valuation and had a market cap of about $93 billion on August 5, 2026. One of YC\u2019s most successful companies ever.",
     pattern: "its-illegal",
   },
   {
@@ -208,7 +208,7 @@ export const posts: Post[] = [
     editorialContext:
       "The launch thread was full of commenters doing unfavorable price comparisons to PayPal. Posted by Patrick Collison himself.",
     outcome:
-      "Stripe reached a $106B+ valuation and processed $1.4 trillion in payments in 2024. The \u2018fancy API\u2019 became the default payments infrastructure for the internet.",
+      "In February 2026, Stripe announced a tender offer valuing the company at $159 billion and reported $1.9 trillion in total volume for 2025. The \u2018fancy API\u2019 became the default payments infrastructure for the internet.",
     pattern: "build-it-yourself",
   },
   {
@@ -240,7 +240,7 @@ export const posts: Post[] = [
     editorialContext:
       "The top comment pointed to the graveyard of companies that tried before. The entire thread read like a post-mortem for a company that hadn\u2019t even launched yet.",
     outcome:
-      "Instacart IPO\u2019d in 2023 and is worth over $12 billion. COVID-19 turned grocery delivery from a novelty into a necessity.",
+      "Instacart IPO\u2019d in 2023 and had a market cap of about $11.5 billion on August 5, 2026. COVID-19 turned grocery delivery from a novelty into a necessity.",
     pattern: "tried-before",
   },
   {
@@ -397,7 +397,7 @@ export const posts: Post[] = [
     editorialContext:
       "Commenters predicted zero market demand. The \u2018better spreadsheet\u2019 category was seen as a graveyard of failed attempts.",
     outcome:
-      "Airtable reached an $11 billion valuation and is used by over 300,000 organizations.",
+      "Airtable\u2019s 2021 Series F set an $11 billion pre-money valuation. Airtable now reports 450,000+ organizations using it and $1.36 billion in total funding.",
     pattern: "tried-before",
   },
   {
@@ -432,7 +432,7 @@ export const posts: Post[] = [
     editorialContext:
       "An entire comment. Just \u201cMEH.\u201d For a company that would be valued at $20 billion.",
     outcome:
-      "Adobe tried to acquire Figma for $20 billion in 2022. Figma IPO\u2019d in 2025 at a $60B+ market cap.",
+      "Adobe tried to acquire Figma for $20 billion in 2022. Figma priced its IPO at $33 per share on July 30, 2025, and had a market cap of about $15 billion on August 5, 2026.",
     pattern: "drive-by-dismissal",
   },
   {
@@ -558,7 +558,7 @@ export const posts: Post[] = [
     editorialContext:
       "Posted the same day ChatGPT launched. Commenters called it dull, filtered, and delusional. It hit 100 million users in two months.",
     outcome:
-      "OpenAI reached a $157B valuation. ChatGPT now has 400M+ weekly active users.",
+      "In March 2026, OpenAI closed a funding round with $122 billion in committed capital at an $852 billion post-money valuation. ChatGPT now has more than 900 million weekly active users.",
     pattern: "nobody-wants-this",
   },
   {
@@ -585,7 +585,7 @@ export const posts: Post[] = [
     editorialContext:
       "The first Show HN got just 14 upvotes. Fourteen. The thread had 5 comments. One commenter couldn\u2019t tell if it was \u2018some sarcastic joke software.\u2019",
     outcome:
-      "By 2025, 1 billion lines of code were being written on Cursor every day. Valued at $10 billion.",
+      "By 2025, 1 billion lines of code were being written on Cursor every day. In November 2025, Anysphere raised $2.3 billion in Series D funding at a $29.3 billion post-money valuation, and Cursor surpassed $1 billion in annualized revenue.",
     pattern: "hype-cycle",
   },
   {

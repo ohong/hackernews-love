@@ -43,7 +43,7 @@ export default async function Image() {
               {"\u201CMEH.\u201D"}
             </div>
             <div style={{ fontSize: 20, color: "#7a7772" }}>
-              {"on Figma \u2014 now worth $60B"}
+              {"on Figma \u2014 about $15B market cap (Aug 2026)"}
             </div>
           </div>
 

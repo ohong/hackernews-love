@@ -42,7 +42,7 @@ The entire thread had just 3 comments and 5 upvotes. Three. Comments. For what w
 
 A textbook example of the "it's illegal therefore it will fail" fallacy — which also managed to preemptively dismiss Uber at the same time.
 
-**What actually happened:** Airbnb IPO'd in 2020 at a $100B+ valuation and is now worth over $80 billion. It is one of YC's most successful companies ever.
+**What actually happened:** Airbnb IPO'd in 2020 at a $100B+ valuation and had a market cap of about $93 billion on August 5, 2026. It is one of YC's most successful companies ever.
 
 ---
 
@@ -62,7 +62,7 @@ A textbook example of the "it's illegal therefore it will fail" fallacy — whic
 
 > *"$18MM to spend only to see if you got it wrong is a rather interesting approach."* — **salimmadjd**
 
-**What actually happened:** Adobe tried to acquire Figma for $20 billion in 2022 (blocked by regulators). Figma IPO'd in 2025 at a $60B+ market cap. The browser-based approach that commenters dismissed turned out to be the product's greatest competitive advantage.
+**What actually happened:** Adobe tried to acquire Figma for $20 billion in 2022 (blocked by regulators). Figma priced its IPO at $33 per share on July 30, 2025, and had a market cap of about $15 billion on August 5, 2026. The browser-based approach that commenters dismissed turned out to be the product's greatest competitive advantage.
 
 ---
 
@@ -80,7 +80,7 @@ The post got just 14 upvotes. Fourteen.
 
 > *"So looking through the dependencies, it's CodeMirror with a VsCode theme on top of it, that includes Copilot. Why wouldn't I just use an existing editor with Copilot support?"* — **Deukhoofd**
 
-**What actually happened:** By 2025, 1 billion lines of code were being written on Cursor every day. It was valued at $10 billion and became the dominant AI code editor.
+**What actually happened:** By 2025, 1 billion lines of code were being written on Cursor every day. In November 2025, Anysphere raised $2.3 billion in Series D funding at a $29.3 billion post-money valuation, and Cursor surpassed $1 billion in annualized revenue. It became the dominant AI code editor.
 
 ---
 
@@ -104,7 +104,7 @@ A Cursor developer patiently replied:
 
 > *"(One of the Cursor devs here) Appreciate the feedback! Can see how this can come across as hype-y. We're a small team of all software engineers and I think we have a thing or two to learn about branding."* — **mntruell**
 
-**What actually happened:** $10 billion valuation. One billion lines of code per day. The most widely adopted AI coding tool in existence.
+**What actually happened:** In November 2025, Anysphere raised $2.3 billion in Series D funding at a $29.3 billion post-money valuation, while Cursor surpassed $1 billion in annualized revenue. One billion lines of code per day. The most widely adopted AI coding tool in existence.
 
 ---
 
@@ -118,7 +118,7 @@ A Cursor developer patiently replied:
 
 The "this was tried before and failed" argument. The classic graveyard-pointing fallacy.
 
-**What actually happened:** Instacart IPO'd in 2023 and is worth over $12 billion. COVID-19 turned grocery delivery from a novelty into a necessity, and Instacart was perfectly positioned.
+**What actually happened:** Instacart IPO'd in 2023 and had a market cap of about $11.5 billion on August 5, 2026. COVID-19 turned grocery delivery from a novelty into a necessity, and Instacart was perfectly positioned.
 
 ---
 
