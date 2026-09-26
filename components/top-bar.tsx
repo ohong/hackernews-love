@@ -1,29 +1,36 @@
-"use client";
-
+import Link from "next/link";
 import { ThemeToggle } from "./theme-toggle";
-
-const REPO = "ohong/hackernews-love";
-
-const suggestUrl =
-  `https://github.com/${REPO}/issues/new?` +
-  new URLSearchParams({
-    title: "Suggest: [Company Name]",
-    body: "## Company\n\n## HN Thread URL\n\n## Dismissive Quote(s)\n\n## What Actually Happened\n",
-    labels: "suggestion",
-  }).toString();
+import { Icon } from "./icons";
+import { suggestUrl } from "@/lib/links";
 
 export function TopBar() {
   return (
-    <div className="fixed top-4 right-4 z-40 flex items-center gap-2">
-      <a
-        href={suggestUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="rounded-full border border-border/60 bg-background/80 px-4 py-1.5 text-sm text-muted/70 backdrop-blur-sm transition-colors hover:text-foreground"
-      >
-        Add Suggestions
-      </a>
-      <ThemeToggle />
-    </div>
+    <header className="site-header wrap">
+      <Link href="/" className="wordmark" aria-label="Hacker News Love home">
+        <span className="brand-mark" aria-hidden="true">
+          Y<span>♥</span>
+        </span>
+        <span>
+          hackernews<span className="brand-love">.love</span>
+        </span>
+      </Link>
+      <nav aria-label="Main navigation">
+        <Link href="/#collection" className="header-link">
+          The collection
+        </Link>
+        <Link href="/#about" className="header-link about-link">
+          A note on hindsight
+        </Link>
+        <a
+          href={suggestUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="suggest-link"
+        >
+          Suggest a story <Icon name="diagonal" width="14" height="14" />
+        </a>
+        <ThemeToggle />
+      </nav>
+    </header>
   );
 }

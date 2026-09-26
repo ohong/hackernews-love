@@ -1,24 +1,19 @@
 # Contributing
 
-Know a company that HN dismissed? We'd love to add it.
+Use **Suggest a story** on the site to open a pre-filled GitHub issue, or add an entry to `data/posts.ts` in a pull request.
 
-## Quickest way
+Include:
 
-Click **"Add Suggestions"** on the site. It opens a pre-filled GitHub issue with four fields:
+1. The original HN discussion, its exact title, and its date.
+2. Short, verbatim excerpts with usernames and direct comment links.
+3. A later milestone with a dated primary source.
+4. The valid concerns or limits that the milestone does not resolve.
+5. A category, cover color, editorial title, and brief description.
 
-1. **Company** — name of the company/project
-2. **HN Thread URL** — link to the original Hacker News discussion
-3. **Dismissive Quote(s)** — verbatim comments from the thread, with usernames
-4. **What Actually Happened** — the outcome (acquisition, IPO, mass adoption, etc.)
+Keep the array in discussion-date order. Cover volume numbers follow that order. The date on a cover is the HN discussion year, not the company's founding year.
 
-That's it. We'll handle the rest.
+Do not describe individual comments as a community verdict. Do not present funding, valuations, downloads, or GitHub stars as proof that criticism was wrong. Keep metrics dated and distinguish company claims from independent measurements.
 
-## Via PR
+Run `bun run verify:quotes` to check attribution, excerpts, discussion titles, and dates against the live HN archive. Whitespace and HTML entities are normalized; wording and punctuation are not. Read the surrounding comments too: a matching phrase alone cannot establish its meaning.
 
-If you'd rather submit a PR directly, add a new entry to `data/posts.ts` following the existing format and open a PR.
-
-## Guidelines
-
-- Quotes must be **real, verbatim HN comments** — no paraphrasing.
-- The company must have a **clear outcome** that proves the skeptics wrong.
-- One good quote is better than four mediocre ones.
+Run `bun run check` and `bun run test:e2e` before opening a PR. Preview long cover titles on both desktop and mobile.

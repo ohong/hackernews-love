@@ -1,4 +1,4 @@
-import { Post } from "@/lib/types";
+import type { Post } from "@/lib/types";
 
 export const posts: Post[] = [
   {
@@ -7,30 +7,39 @@ export const posts: Post[] = [
     month: "April",
     year: 2007,
     hnThreadUrl: "https://news.ycombinator.com/item?id=8863",
-    hnPostTitle: "My YC app: Dropbox \u2013 Throw away your USB drive",
-    dismissiveQuotes: [
+    hnPostTitle: "My YC app: Dropbox - Throw away your USB drive",
+    editorialContext:
+      "Drew Houston shared Dropbox as his Y Combinator application. The discussion compared effortless file sync with tools that technical users already had.",
+    outcome:
+      "Dropbox went public in March 2018. File sync became a business used by individuals and teams.",
+    category: "Everyday life",
+    coverColor: "#294f70",
+    coverTitle: "The cloud in a box",
+    description: "A USB drive you could never leave at home.",
+    nuance:
+      "The famous FTP comment was about a YC application, and specifically Linux users. HN moderator dang later explained that its author was trying to help. Trust and competition were reasonable concerns.",
+    outcomeSource: {
+      label: "Dropbox IPO announcement",
+      url: "https://investors.dropbox.com/news-releases/news-release-details/dropbox-announces-pricing-initial-public-offering",
+      date: "March 2018",
+    },
+    contextSource: {
+      label: "Read dang’s explanation",
+      url: "https://news.ycombinator.com/item?id=27067281",
+    },
+    discussionDate: "2007-04-04",
+    quotes: [
       {
-        text: "For a Linux user, you can already build such a system yourself quite trivially by getting an FTP account, mounting it locally with curlftpfs, and then using SVN or CVS on the mounted filesystem. From Windows or Mac, this FTP account could be accessed through built-in software.",
+        text: "For a Linux user, you can already build such a system yourself quite trivially by getting an FTP account, mounting it locally with curlftpfs, and then using SVN or CVS on the mounted filesystem.",
         author: "BrandonM",
+        url: "https://news.ycombinator.com/item?id=9224",
       },
       {
-        text: "It does not seem very \u2018viral\u2019 or income-generating.",
-        author: "BrandonM",
-      },
-      {
-        text: "It\u2019s pretty nice, and I was thinking to myself \u2014 hey cool, I could make an online backup of my code. Then it occurred to me \u2014 who the hell is this guy, and why should I trust my code to be on his server!?",
+        text: "who the hell is this guy, and why should I trust my code to be on his server!?",
         author: "markovich",
-      },
-      {
-        text: "It\u2019s a pretty crowded space. And XDrive gets you 5 GB for free, 50 GB for $9.95 a month. I think competitors can duplicate Dropbox\u2019s nice front end.",
-        author: "jganetsk",
+        url: "https://news.ycombinator.com/item?id=8887",
       },
     ],
-    editorialContext:
-      "The most famous bad take in HN history \u2014 the \u2018I could build this myself with existing unix tools\u2019 archetype.",
-    outcome:
-      "Dropbox IPO\u2019d in 2018 at a $12B valuation. Drew Houston later thanked BrandonM by name when Dropbox went public.",
-    pattern: "build-it-yourself",
   },
   {
     id: "github",
@@ -39,49 +48,34 @@ export const posts: Post[] = [
     year: 2008,
     hnThreadUrl: "https://news.ycombinator.com/item?id=160162",
     hnPostTitle: "GitHub now open to everyone. Here is the pricing.",
-    dismissiveQuotes: [
+    editorialContext:
+      "GitHub opened its doors in 2008. Some commenters wanted to understand what a hosted service offered over a server they controlled.",
+    outcome:
+      "Microsoft completed its $7.5 billion acquisition of GitHub in October 2018.",
+    category: "Developer tools",
+    coverColor: "#574469",
+    coverTitle: "A home for code",
+    description: "What if the repository was also a meeting place?",
+    nuance:
+      "Self-hosting remains a valid choice. Questions about pricing and a solo developer’s needs are different from predicting that collaboration has no value.",
+    outcomeSource: {
+      label: "Microsoft acquisition announcement",
+      url: "https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/",
+      date: "October 2018",
+    },
+    discussionDate: "2008-04-10",
+    quotes: [
       {
-        text: "I still don\u2019t exactly understand what they are offering? Is there an advantage to using GitHub versus dumping some (yet to be created) virtual machine image on a cheap virtual server?",
+        text: "I still don't exactly understand what they are offering?",
         author: "Tichy",
+        url: "https://news.ycombinator.com/item?id=160250",
       },
       {
-        text: "Don\u2019t you think that git\u2019s advantage over SVN evaporates when there is only one user on a team? I run my private Subversion repository which I use for everything (not just code).",
-        author: "tx",
-      },
-      {
-        text: "Doesn\u2019t the pricing seem a bit too granular, though? I suspect the pricing categories will collapse into 3, maybe 4, levels eventually.",
+        text: "Doesn't the pricing seem a bit too granular, though? I suspect the pricing categories will collapse into 3, maybe 4, levels eventually.",
         author: "revolvingcur",
+        url: "https://news.ycombinator.com/item?id=160296",
       },
     ],
-    editorialContext:
-      "The opening comment literally couldn\u2019t see the point. GitHub was perceived as \u2018just a git host\u2019 \u2014 the social layer and the network effects were invisible.",
-    outcome:
-      "Microsoft acquired GitHub in 2018 for $7.5 billion. GitHub now hosts 100M+ developers and 420M+ repositories.",
-    pattern: "build-it-yourself",
-  },
-  {
-    id: "bitcoin",
-    companyName: "Bitcoin",
-    month: "June",
-    year: 2009,
-    hnThreadUrl: "https://news.ycombinator.com/item?id=599852",
-    hnPostTitle:
-      "Bitcoin: peer-to-peer network based anonymous digital currency",
-    dismissiveQuotes: [
-      {
-        text: "Well this is an exceptionally cute idea, but there is absolutely no way that anyone is going to have any faith in this currency.",
-        author: "jdoliner",
-      },
-      {
-        text: "I\u2019m having trouble wrapping my head around the logistics of this...",
-        author: "ram1024",
-      },
-    ],
-    editorialContext:
-      "The entire thread had just 3 comments and 5 upvotes. Three comments. For what would become a $2 trillion asset class.",
-    outcome:
-      "A single bitcoin went from fractions of a cent in 2009 to over $100,000 by 2024. Total crypto market cap exceeded $3 trillion.",
-    pattern: "nobody-wants-this",
   },
   {
     id: "duckduckgo",
@@ -89,65 +83,111 @@ export const posts: Post[] = [
     month: "February",
     year: 2009,
     hnThreadUrl: "https://news.ycombinator.com/item?id=460877",
-    hnPostTitle: "DuckDuckGo \u2013 a new search engine",
-    dismissiveQuotes: [
+    hnPostTitle: 'DuckDuckGo is top result for "new search engine"',
+    editorialContext:
+      "In 2009, commenters questioned DuckDuckGo’s name, discoverability, and search quality. Those were three different objections.",
+    outcome:
+      "DuckDuckGo developed from a search engine into a privacy-focused search and browser company.",
+    category: "Everyday life",
+    coverColor: "#ac593b",
+    coverTitle: "A different way to search",
+    description: "A little duck in a very big pond.",
+    nuance:
+      "Peter Cooper, quoted here, returned to our launch discussion to explain that his 2009 criticism described the product then. He welcomed its later improvement.",
+    outcomeSource: {
+      label: "DuckDuckGo’s history",
+      url: "https://duckduckgo.com/about",
+      date: "Source checked September 2026",
+    },
+    contextSource: {
+      label: "Peter Cooper’s follow-up",
+      url: "https://news.ycombinator.com/item?id=47120188",
+    },
+    discussionDate: "2009-02-01",
+    quotes: [
       {
-        text: "I can\u2019t ever see anyone saying \u2018just duckduckgo it.\u2019 The name just sounds silly. It makes me think it\u2019s a search engine for toddlers.",
+        text: "This site is going to have to change it's name to get to the next level. I can't ever see anyone saying \"just duckduckgo it\".",
         author: "mattmaroon",
+        url: "https://news.ycombinator.com/item?id=460956",
       },
       {
-        text: "DuckDuckGo is childish. I think that name will hold them back.",
-        author: "mattmaroon",
-      },
-      {
-        text: "How many people would go to Google and search for \u2018new search engine\u2019? DuckDuckGo is not even in the top 10 pages.",
-        author: "vaksel",
-      },
-      {
-        text: "I don\u2019t find their actual search engine very useful at all.",
+        text: "Sadly I don't find their actual search engine very useful at all, but the widget is excellent!",
         author: "petercooper",
+        url: "https://news.ycombinator.com/item?id=461089",
       },
     ],
+  },
+  {
+    id: "bitcoin",
+    companyName: "Bitcoin",
+    month: "May",
+    year: 2009,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=599852",
+    hnPostTitle:
+      "Bitcoin: peer-to-peer network based anonymous digital currency",
     editorialContext:
-      "The name. That was the biggest objection. Nobody could get past it. Meanwhile, Google itself was once mocked for being a misspelling of a number.",
+      "An early HN submission introduced a peer-to-peer currency. The small discussion raised the most basic question: why would anyone trust it?",
     outcome:
-      "DuckDuckGo grew to over 100 million daily search queries and became the default search engine in many privacy-focused browsers. In 2026, DuckDuckGo reported over 335 team members and an estimated 22.2 million average monthly active recipients in the EU as of June 2026.",
-    pattern: "drive-by-dismissal",
+      "Bitcoin continued as an open-source network. Its design and software remain publicly available.",
+    category: "Everyday life",
+    coverColor: "#a65c31",
+    coverTitle: "In code we trust",
+    description: "An experiment in money without a central issuer.",
+    nuance:
+      "Adoption does not settle questions about volatility, energy use, or usefulness. This is a story about an experiment persisting.",
+    outcomeSource: {
+      label: "Bitcoin project documentation",
+      url: "https://bitcoin.org/en/how-it-works",
+      date: "Source checked September 2026",
+    },
+    discussionDate: "2009-05-08",
+    quotes: [
+      {
+        text: "Well this is an exceptionally cute idea, but there is absolutely no way that anyone is going to have any faith in this currency.",
+        author: "jdoliner",
+        url: "https://news.ycombinator.com/item?id=600813",
+      },
+      {
+        text: "i'm having trouble wrapping my head around the logistics of this...",
+        author: "ram1024",
+        url: "https://news.ycombinator.com/item?id=599936",
+      },
+    ],
   },
   {
     id: "uber",
     companyName: "Uber",
-    month: "September",
+    month: "August",
     year: 2010,
     hnThreadUrl: "https://news.ycombinator.com/item?id=1649136",
     hnPostTitle: "UberCab to disrupt the Taxi/Limo business",
-    dismissiveQuotes: [
+    editorialContext:
+      "The UberCab discussion focused on taxi licensing, passenger safety, and the risks of matching strangers through an app.",
+    outcome: "Uber became a public company in May 2019.",
+    category: "Everyday life",
+    coverColor: "#393e3d",
+    coverTitle: "A ride, reimagined",
+    description: "A button, a car, and a city full of questions.",
+    nuance:
+      "Regulatory and safety concerns were substantive. A company growing does not make its social costs disappear or prove every critic mistaken.",
+    outcomeSource: {
+      label: "Uber IPO announcement",
+      url: "https://investor.uber.com/news-events/news/press-release-details/2019/Uber-Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      date: "May 2019",
+    },
+    discussionDate: "2010-08-31",
+    quotes: [
       {
-        text: "Unfortunately taxis are a regulated industry in most major cities. The entrenched interests of the taxi companies are simply too big \u2014 and they have the political clout \u2014 to let this one slide under the radar.",
+        text: "The entrenched interests of the taxi companies are simply too big (and they have the political clout) to let this one slide under the radar.",
         author: "keltex",
-      },
-      {
-        text: "If this service became at all popular, it is very likely that cities would immediately include \u2018mobile hailing\u2019 as also requiring a license.",
-        author: "keltex",
-      },
-      {
-        text: "Driving a gypsy cab (which is what UberCab is) is a dangerous business. A bad guy could simply place an order for an out-of-the-way alley or warehouse and know that the cabbie is going to be driving a really nice car.",
-        author: "jtbigwoo",
+        url: "https://news.ycombinator.com/item?id=1649335",
       },
       {
         text: "The first time an UberCab driver gets into a wreck without insurance or licensing should be interesting.",
         author: "jonknee",
-      },
-      {
-        text: "This drastically idealizes UberCab profiles. It gets a lot shadier when UberCab is one of 10 companies doing this, and when it starts to become worth it to game profiles.",
-        author: "tptacek",
+        url: "https://news.ycombinator.com/item?id=1650207",
       },
     ],
-    editorialContext:
-      "Two months after this thread, Uber received an actual cease-and-desist from San Francisco, seemingly validating every skeptic. Travis Kalanick\u2019s response was to ignore it and expand to five more cities.",
-    outcome:
-      "Uber IPO\u2019d in 2019 and had a market cap of about $141 billion on August 5, 2026. NYC taxi medallions, which sold for $1.3M in 2014, collapsed to under $80K. The regulation that was supposed to stop Uber became its origin story.",
-    pattern: "its-illegal",
   },
   {
     id: "airbnb",
@@ -155,125 +195,105 @@ export const posts: Post[] = [
     month: "March",
     year: 2011,
     hnThreadUrl: "https://news.ycombinator.com/item?id=2337093",
-    hnPostTitle: "Airbnb",
-    dismissiveQuotes: [
+    hnPostTitle: "Subject: Airbnb",
+    editorialContext:
+      "Commenters asked whether home-sharing could scale when reliability and trust varied from one host to the next.",
+    outcome: "Airbnb went public in December 2020.",
+    category: "Everyday life",
+    coverColor: "#9e4b4a",
+    coverTitle: "A stranger’s spare room",
+    description: "The hard part was never just finding a bed.",
+    nuance:
+      "Trust, local housing supply, and regulation remain separate questions from business growth. Airbnb did not need to replace every hotel to find a market.",
+    outcomeSource: {
+      label: "Airbnb IPO announcement",
+      url: "https://investors.airbnb.com/press-releases/news-details/2020/Airbnb-Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      date: "December 2020",
+    },
+    discussionDate: "2011-03-17",
+    quotes: [
       {
-        text: "All my experiences with it as a user have been too unreliable to expect that it can scale to truly massive usability. I just don\u2019t see it swallowing up the whole hotel industry.",
+        text: "All my experiences with it as a user have been too unreliable to expect that it can scale to truly massive usability.",
         author: "quickpost",
+        url: "https://news.ycombinator.com/item?id=2337356",
       },
       {
-        text: "This exchange cements my concerns about Airbnb only being huge if they can end-run the hotel regulatory system.",
+        text: "This exchange cements my concerns about AirBNB only being huge if they can end-run the hotel regulatory system.",
         author: "nupark",
-      },
-      {
-        text: "Airbnb is almost more like a dating service than a marketplace\u2026 a buyer and seller who prove compatible will never need to use the service again.",
-        author: "CamperBob",
-      },
-      {
-        text: "Airbnb is great unless you\u2019re the kind of person that doesn\u2019t trust strangers. Sadly, in the United States, the tendency to not trust strangers has been on the upswing for the last few decades.",
-        author: "ryandvm",
+        url: "https://news.ycombinator.com/item?id=2337954",
       },
     ],
-    editorialContext:
-      "The top comment sided with the skeptics. Commenters argued Airbnb couldn\u2019t scale and couldn\u2019t solve the trust problem of sleeping in a stranger\u2019s home.",
-    outcome:
-      "Airbnb IPO\u2019d in 2020 at a $100B+ valuation and had a market cap of about $93 billion on August 5, 2026. One of YC\u2019s most successful companies ever.",
-    pattern: "its-illegal",
   },
   {
     id: "stripe",
     companyName: "Stripe",
-    month: "October",
+    month: "September",
     year: 2011,
     hnThreadUrl: "https://news.ycombinator.com/item?id=3053883",
     hnPostTitle: "Stripe: instant payment processing for developers",
-    dismissiveQuotes: [
+    editorialContext:
+      "Stripe’s launch invited comparisons with PayPal and other processors. Developers weighed API convenience against pricing and account structure.",
+    outcome:
+      "Stripe reported that businesses on its platform generated $1.9 trillion in total payment volume in 2025.",
+    category: "Developer tools",
+    coverColor: "#61517b",
+    coverTitle: "Seven lines of possibility",
+    description: "Making payments something a developer could love.",
+    nuance:
+      "Asking how a product differs from its competitors is useful feedback. Payment volume is not Stripe’s revenue or profit.",
+    outcomeSource: {
+      label: "Stripe’s 2025 annual update",
+      url: "https://stripe.com/newsroom/news/stripe-2025-update",
+      date: "February 2026",
+    },
+    discussionDate: "2011-09-29",
+    quotes: [
       {
-        text: "I really don\u2019t get or see how Stripe is different? Why would I use it instead of PayPal, 2CheckOut, e-junkie, etc?",
+        text: "I really don't get or see how Stripe is different? Why would I use it instead of PayPal, 2CheckOut, e-junkie, etc?",
         author: "powertower",
+        url: "https://news.ycombinator.com/item?id=3055084",
       },
       {
-        text: "I have no need of a fancy API either \u2014 PayPal lets me specify the basics and fire off a simple Post from my PHP code.",
+        text: "I have no need of a fancy API, either--PayPal lets me specify the basics and fire off a simple Post from my PHP code.",
         author: "david5342",
-      },
-      {
-        text: "Stripe gets added to the bookmark collection for \u2018services to use should I ever have a problem with PayPal.\u2019",
-        author: "dangrossman",
-      },
-      {
-        text: "Pretty much every company in payment processing that does not use segregated merchant accounts sooner or later goes bust.",
-        author: "0x12",
+        url: "https://news.ycombinator.com/item?id=3054023",
       },
     ],
-    editorialContext:
-      "The launch thread was full of commenters doing unfavorable price comparisons to PayPal. Posted by Patrick Collison himself.",
-    outcome:
-      "In February 2026, Stripe announced a tender offer valuing the company at $159 billion and reported $1.9 trillion in total volume for 2025. The \u2018fancy API\u2019 became the default payments infrastructure for the internet.",
-    pattern: "build-it-yourself",
   },
   {
     id: "instacart",
     companyName: "Instacart",
     month: "August",
     year: 2012,
-    hnThreadUrl: "https://news.ycombinator.com/item?id=4388793",
-    hnPostTitle:
-      "Instacart (YC S12) wants to be Amazon with 1 hour delivery",
-    dismissiveQuotes: [
+    hnThreadUrl: "https://news.ycombinator.com/item?id=4325317",
+    hnPostTitle: "Instacart (YC S12) wants to be Amazon with 1 hour delivery",
+    editorialContext:
+      "Commenters remembered earlier delivery failures. They questioned labor costs, delivery fees, and the difficulty of real-time operations.",
+    outcome: "Instacart priced its initial public offering in September 2023.",
+    category: "Everyday life",
+    coverColor: "#53694a",
+    coverTitle: "This time, the groceries",
+    description: "A familiar idea meets a different moment.",
+    nuance:
+      "The commenters hoped the service would succeed while questioning its economics. The operational questions did not vanish. An IPO does not mean every delivery business has a viable business model.",
+    outcomeSource: {
+      label: "Instacart IPO announcement",
+      url: "https://company.instacart.com/pressreleases/instacart-announces-pricing-of-initial-public-offering",
+      date: "September 2023",
+    },
+    discussionDate: "2012-08-01",
+    quotes: [
       {
-        text: "A lot of really smart people have tried and failed to accomplish this sort of thing before. Amazon invested $60 million in Kozmo.com back in the late 90\u2019s, and they couldn\u2019t make it work.",
         author: "cs702",
+        text: "That said, I can't help but wonder whether the company will find a business model with sustainable economics.",
+        url: "https://news.ycombinator.com/item?id=4325726",
       },
       {
-        text: "I just do not see how this scales, as your marginal labor costs have got to be a very high portion of your revenues.",
         author: "LargeWu",
-      },
-      {
-        text: "Having a delivery fee is a non-starter. \u2018I can get it in 2 days free with Amazon, or $4 today...\u2019 People will spend huge amounts of time and effort to not pay delivery charges.",
-        author: "aidenn0",
-      },
-      {
-        text: "I\u2019ve built a few real-time delivery businesses, and I\u2019m pessimistic. Real-time operations are costly to manage. Not being Amazon and not being able to control inventory hurts.",
-        author: "jonmc12",
+        text: "I just do not see how this scales, as your marginal labor costs have got to be a very high portion of your revenues.",
+        url: "https://news.ycombinator.com/item?id=4325930",
       },
     ],
-    editorialContext:
-      "The top comment pointed to the graveyard of companies that tried before. The entire thread read like a post-mortem for a company that hadn\u2019t even launched yet.",
-    outcome:
-      "Instacart IPO\u2019d in 2023 and had a market cap of about $11.5 billion on August 5, 2026. COVID-19 turned grocery delivery from a novelty into a necessity.",
-    pattern: "tried-before",
-  },
-  {
-    id: "segment",
-    companyName: "Segment",
-    month: "November",
-    year: 2012,
-    hnThreadUrl: "https://news.ycombinator.com/item?id=4912076",
-    hnPostTitle:
-      "Show HN: Analytics.js \u2013 The analytics API you\u2019ve always wanted",
-    dismissiveQuotes: [
-      {
-        text: "It includes code to load up various analytics tools even if you never use them. For example, if I only use GA and Mixpanel, do I really want to serve the bytes for all the other plugins?",
-        author: "bluesmoon",
-      },
-      {
-        text: "It\u2019s going to be really hard to make a generic, non-lossy mapping in a static, stateless JS script.",
-        author: "alexdean",
-      },
-      {
-        text: "I was hoping that this would be an open source version of Google Analytics.",
-        author: "tarr11",
-      },
-      {
-        text: "Google Analytics has a new API currently in beta that is also called analytics.js. This will be confusing.",
-        author: "dudus",
-      },
-    ],
-    editorialContext:
-      "Commenters argued the abstraction layer couldn\u2019t work across fundamentally different analytics providers. The founders later wrote \u2018From Show HN to Series D.\u2019",
-    outcome:
-      "Segment was acquired by Twilio for $3.2 billion in 2020, the largest acquisition in developer tooling at the time.",
-    pattern: "wrong-approach",
   },
   {
     id: "typescript",
@@ -281,92 +301,144 @@ export const posts: Post[] = [
     month: "October",
     year: 2012,
     hnThreadUrl: "https://news.ycombinator.com/item?id=4597716",
-    hnPostTitle: "TypeScript: JavaScript Development at Application Scale",
-    dismissiveQuotes: [
+    hnPostTitle:
+      "TypeScript: a language for application-scale JavaScript development",
+    editorialContext:
+      "The first TypeScript release was an early version of a new language. Commenters questioned its maturity and Microsoft’s approach.",
+    outcome:
+      "TypeScript became the most-used language on GitHub in August 2025, according to GitHub’s Octoverse report.",
+    category: "Developer tools",
+    coverColor: "#346481",
+    coverTitle: "A little more certainty",
+    description: "JavaScript, with a few things written down.",
+    nuance:
+      "The early language lacked features it later gained. GitHub activity is not a measurement of all JavaScript developers.",
+    outcomeSource: {
+      label: "GitHub Octoverse 2025",
+      url: "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+      date: "October 2025",
+    },
+    discussionDate: "2012-10-01",
+    quotes: [
       {
-        text: "I think you\u2019d be a damned fool to invest in this technology for any serious project. Right now this is a toy.",
+        text: "I think you'd be a damned fool to invest in this technology for any serious project. Right now this is a toy.",
         author: "oinksoft",
+        url: "https://news.ycombinator.com/item?id=4599183",
       },
       {
-        text: "I have more than a sneaking suspicion that this project is essentially a proof-of-concept, and that it is not heavily used at Microsoft.",
-        author: "oinksoft",
-      },
-      {
-        text: "Where\u2019s all that great refactoring support if everything is made dynamic and stringly typed?",
+        text: "Where's all that great refactoring support if everything is made `dynamic` and stringly typed?",
         author: "skrebbel",
+        url: "https://news.ycombinator.com/item?id=4598738",
       },
     ],
+  },
+  {
+    id: "segment",
+    companyName: "Segment",
+    month: "December",
+    year: 2012,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=4912076",
+    hnPostTitle:
+      "Show HN: Analytics.js – The analytics API you've always wanted",
     editorialContext:
-      "Microsoft + new language + compile-to-JS triggered every distrust reflex at once. The phrase \u2018damned fool\u2019 was deployed with full sincerity.",
+      "Analytics.js offered one interface to several analytics services. The thread questioned payload size and whether different tools could share a useful abstraction.",
     outcome:
-      "TypeScript is now used by 80%+ of JavaScript developers and is the default language for virtually every major web framework.",
-    pattern: "nobody-wants-this",
+      "Twilio completed its acquisition of Segment in November 2020, in a transaction valued at approximately $3.2 billion.",
+    category: "Developer tools",
+    coverColor: "#3b7465",
+    coverTitle: "One connection, many worlds",
+    description: "A small abstraction with a much bigger future.",
+    nuance:
+      "A valuable business can still contain imperfect abstractions. The original technical questions deserve to be read on their own terms.",
+    outcomeSource: {
+      label: "Twilio acquisition announcement",
+      url: "https://www.twilio.com/en-us/press/releases/twilio-completes-acquisition-segment-market-leading-customer-data-platform",
+      date: "November 2020",
+    },
+    discussionDate: "2012-12-12",
+    quotes: [
+      {
+        text: "I was hoping that this would be an open source version of Google Analytics.",
+        author: "tarr11",
+        url: "https://news.ycombinator.com/item?id=4912378",
+      },
+      {
+        text: "Google Analytics has a new api currently in beta that is also called analytics.js. This will be confusing.",
+        author: "dudus",
+        url: "https://news.ycombinator.com/item?id=4912291",
+      },
+    ],
   },
   {
     id: "react",
     companyName: "React",
-    month: "June",
+    month: "May",
     year: 2013,
     hnThreadUrl: "https://news.ycombinator.com/item?id=5789055",
-    hnPostTitle: "React: Facebook\u2019s latest open source JavaScript library",
-    dismissiveQuotes: [
+    hnPostTitle: "React, a JavaScript library for building user interfaces",
+    editorialContext:
+      "React put markup and logic together in components. The discussion questioned whether that choice undermined separation of concerns.",
+    outcome:
+      "The React Foundation launched under the Linux Foundation in February 2026.",
+    category: "Developer tools",
+    coverColor: "#3f737b",
+    coverTitle: "A different kind of composition",
+    description: "An old argument about a new way to build.",
+    nuance:
+      "Component boundaries are one way to organize code. React’s adoption does not make other approaches invalid or erase the costs of its ecosystem.",
+    outcomeSource: {
+      label: "React Foundation announcement",
+      url: "https://react.dev/blog/2026/02/24/the-react-foundation",
+      date: "February 2026",
+    },
+    discussionDate: "2013-05-29",
+    quotes: [
       {
-        text: "This is terrible. Did we really not learn anything from PHP days? Are we seriously going to mix markup and logic again?",
+        text: "did we really not learn anything from PHP days? Are we seriously going to mix markup and logic again?",
         author: "mavdi",
+        url: "https://news.ycombinator.com/item?id=5791776",
       },
       {
-        text: "OMG, JSX\u2026 why? Just why?? Stop ruining JS people!",
+        text: "OMG, JSX.. why? just why?? Stop ruining js people!",
         author: "lardissone",
-      },
-      {
-        text: "The current fad of quasi-declarative web components looks like early Ext to me, and I think everyone knows how that turned out.",
-        author: "smrtinsert",
-      },
-      {
-        text: "Mixing JS and XML syntax, variables in docblocks, DOM components that are not really DOM components\u2026 Yikes. Thank you, but no, thank you.",
-        author: "leecGoimik7",
-      },
-      {
-        text: "Meh.",
-        author: "achalv",
+        url: "https://news.ycombinator.com/item?id=5794696",
       },
     ],
-    editorialContext:
-      "The developer community overwhelmingly felt React violated fundamental software engineering principles. \u2018Separation of concerns\u2019 was the rallying cry against it.",
-    outcome:
-      "React became the most popular UI library in the world, used by over 20 million developers. In 2025, Meta donated React to the Linux Foundation.",
-    pattern: "wrong-approach",
   },
   {
     id: "product-hunt",
     companyName: "Product Hunt",
-    month: "February",
+    month: "January",
     year: 2014,
     hnThreadUrl: "https://news.ycombinator.com/item?id=7144815",
-    hnPostTitle: "Show HN: Product Hunt \u2013 Hacker News for Products",
-    dismissiveQuotes: [
+    hnPostTitle: "Show HN: Product Hunt – Hacker News for Products",
+    editorialContext:
+      "Product Hunt’s early interface left some visitors unsure of its purpose. Others wondered why another discovery site was needed.",
+    outcome: "Product Hunt joined AngelList in December 2016.",
+    category: "Everyday life",
+    coverColor: "#a2573e",
+    coverTitle: "Something new, every day",
+    description: "A place for people who like finding things first.",
+    nuance:
+      "Confusing onboarding was actionable feedback. A product can improve after criticism; its eventual audience does not make early usability problems imaginary.",
+    outcomeSource: {
+      label: "Product Hunt joins AngelList",
+      url: "https://www.ryanhoover.me/post/product-hunt-angellist",
+      date: "December 2016",
+    },
+    discussionDate: "2014-01-29",
+    quotes: [
       {
         text: "I mean this in the most helpful way possible: the interface is really, really bad at serving one of its basic, fundamental functions.",
         author: "kmfrk",
+        url: "https://news.ycombinator.com/item?id=7145432",
       },
       {
         text: "I can get everything I need on HN. Ultimately the best products will make the front page here, no need to look around.",
         author: "suyash",
-      },
-      {
-        text: "I looked at the page for like 30 seconds, thinking to myself, \u2018What is this?\u2019\u2026 literally incomprehensible to a typical reader.",
-        author: "vitd",
-      },
-      {
-        text: "Here\u2019s a few things I couldn\u2019t easily figure out on your site: What is a best new product? How is this different than a linked list on a blog? Is this site for me or for someone else?",
-        author: "gblanston",
+        url: "https://news.ycombinator.com/item?id=7145378",
       },
     ],
-    editorialContext:
-      "Commenters couldn\u2019t figure out what Product Hunt was after 30 seconds. It went on to become the default place to launch a tech product.",
-    outcome:
-      "Product Hunt was accepted into Y Combinator, raised from Andreessen Horowitz, and was later acquired by AngelList.",
-    pattern: "drive-by-dismissal",
   },
   {
     id: "airtable",
@@ -374,102 +446,108 @@ export const posts: Post[] = [
     month: "September",
     year: 2014,
     hnThreadUrl: "https://news.ycombinator.com/item?id=8373914",
-    hnPostTitle:
-      "Show HN: Airtable, a real-time spreadsheet-database hybrid",
-    dismissiveQuotes: [
+    hnPostTitle: "Show HN: Airtable, a real-time spreadsheet-database hybrid",
+    editorialContext:
+      "Airtable proposed a spreadsheet-database hybrid. Commenters questioned demand and whether ordinary spreadsheet users would change their habits.",
+    outcome:
+      "Airtable reports that more than 450,000 organizations use its platform.",
+    category: "Developer tools",
+    coverColor: "#98763d",
+    coverTitle: "Beyond the spreadsheet",
+    description: "Rows and columns, with room for more.",
+    nuance:
+      "Company-reported adoption is not the same as paying customers. Performance and switching costs can matter even when a product finds an audience.",
+    outcomeSource: {
+      label: "Airtable newsroom",
+      url: "https://www.airtable.com/newsroom",
+      date: "Source checked September 2026",
+    },
+    discussionDate: "2014-09-26",
+    quotes: [
       {
         text: "No way this a spreadsheet. This is just a CRUD app with data displayed in rows. Zero chance of catching with spreadsheet users.",
         author: "fiatjaf",
-      },
-      {
-        text: "The demand for an Access-like or \u2018better spreadsheet\u2019 product is all of the \u2018Oh yeah, it sounds cool\u2019 variety that never results in sales.",
-        author: "sedachv",
+        url: "https://news.ycombinator.com/item?id=8376087",
       },
       {
         text: "Very difficult to get non technical peeps just suddenly ditch spreadsheets.",
         author: "livestyle",
-      },
-      {
-        text: "Your app seems sluggish to scroll compared to Google Docs at that size, and the record density seems low.",
-        author: "Erwin",
+        url: "https://news.ycombinator.com/item?id=8374678",
       },
     ],
-    editorialContext:
-      "Commenters predicted zero market demand. The \u2018better spreadsheet\u2019 category was seen as a graveyard of failed attempts.",
-    outcome:
-      "Airtable\u2019s 2021 Series F set an $11 billion pre-money valuation. Airtable now reports 450,000+ organizations using it and $1.36 billion in total funding.",
-    pattern: "tried-before",
   },
   {
     id: "figma",
     companyName: "Figma",
-    month: "November",
+    month: "December",
     year: 2015,
     hnThreadUrl: "https://news.ycombinator.com/item?id=10685407",
     hnPostTitle: "Launch of Figma, a collaborative interface design tool",
-    dismissiveQuotes: [
+    editorialContext:
+      "Figma asked designers to work in a browser. The thread questioned performance, switching costs, and why the web was an advantage.",
+    outcome:
+      "Figma priced its IPO at $33 per share in July 2025. Adobe’s earlier proposed acquisition did not close.",
+    category: "Developer tools",
+    coverColor: "#80594d",
+    coverTitle: "A canvas without walls",
+    description: "Could the browser become the design studio?",
+    nuance:
+      "Desktop preferences and switching costs were real concerns. The proposed $20 billion Adobe deal should not be confused with a completed acquisition.",
+    outcomeSource: {
+      label: "Figma IPO announcement",
+      url: "https://investor.figma.com/news-events/news/news-details/2025/Figma-Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      date: "July 2025",
+    },
+    discussionDate: "2015-12-06",
+    quotes: [
       {
-        text: "This service allows me to solve this communication problem by asking designers to learn this tool \u2014 which is new to them, requires time, and also isn\u2019t as powerful as Photoshop.",
-        author: "golergka",
-      },
-      {
-        text: "The main differentiator is \u2018we\u2019re making this run in the browser.\u2019 But nowhere does it explain why that\u2019s better for designers.",
+        text: "The main differentiator and focus of the post is \"we're making this run in the browser\". But nowhere does it explain why that's better for designers.",
         author: "abalone",
+        url: "https://news.ycombinator.com/item?id=10686302",
       },
       {
-        text: "I just want a solid desktop app that isn\u2019t a web wrapper or lives in the browser. I can\u2019t stand web apps to be honest.",
+        text: "I just want a solid desktop app that isn't a web wrapper or lives in the browser. I can't stand web apps to be honest.",
         author: "EC1",
-      },
-      {
-        text: "$18MM to spend only to see if you got it wrong is a rather interesting approach.",
-        author: "salimmadjd",
-      },
-      {
-        text: "MEH",
-        author: "williamle8300",
+        url: "https://news.ycombinator.com/item?id=10685571",
       },
     ],
-    editorialContext:
-      "An entire comment. Just \u201cMEH.\u201d For a company that would be valued at $20 billion.",
-    outcome:
-      "Adobe tried to acquire Figma for $20 billion in 2022. Figma priced its IPO at $33 per share on July 30, 2025, and had a market cap of about $15 billion on August 5, 2026.",
-    pattern: "drive-by-dismissal",
   },
   {
     id: "tailwind",
     companyName: "Tailwind CSS",
-    month: "July",
+    month: "August",
     year: 2020,
-    hnThreadUrl: "https://news.ycombinator.com/item?id=24034453",
+    hnThreadUrl: "https://news.ycombinator.com/item?id=24031290",
     hnPostTitle:
       "Tailwind CSS: From Side-Project Byproduct to Multi-Million Dollar Business",
-    dismissiveQuotes: [
+    editorialContext:
+      "Tailwind’s utility classes reopened an old argument about where presentation belongs. The linked thread discussed the business as well as the approach.",
+    outcome:
+      "Tailwind continued developing its utility-first framework, including a ground-up v4 release in January 2025.",
+    category: "Developer tools",
+    coverColor: "#376f7d",
+    coverTitle: "Style, outside the lines",
+    description: "The separation-of-concerns debate gets a sequel.",
+    nuance:
+      "The first commenter later edited their comment to say they understood the approach better. Popularity cannot settle a question of maintainability; the trade-offs depend on the team and project.",
+    outcomeSource: {
+      label: "Tailwind CSS v4 announcement",
+      url: "https://tailwindcss.com/blog/tailwindcss-v4",
+      date: "January 2025",
+    },
+    discussionDate: "2020-08-02",
+    quotes: [
       {
-        text: "I don\u2019t understand Tailwind. The entire point of CSS is to separate style from structure. How does applying composable utility classes differ from the old days of using HTML attributes for styling?",
+        text: "I don't understand tailwind. The entire point of CSS is to separate style from structure.",
         author: "_AzMoo",
+        url: "https://news.ycombinator.com/item?id=24034453",
       },
       {
-        text: "This is essentially the same as inlining all of your styles in a style attribute on every element. I don\u2019t see how you would ever reasonably want to use this in a project.",
-        author: "Etheryte",
-      },
-      {
-        text: "Wasn\u2019t the whole point of CSS to separate presentation from data, and move away from things like <font color=...>? This is still considered bad practice, right?",
-        author: "aspyct",
-      },
-      {
-        text: "I don\u2019t get it either. Start putting CSS in the style attribute while you\u2019re at it.",
+        text: "I don’t get it either. Start putting css in the style attribute while you’re at it.",
         author: "devmunchies",
-      },
-      {
-        text: "The emperor has no clothes.",
-        author: "encom",
+        url: "https://news.ycombinator.com/item?id=24034492",
       },
     ],
-    editorialContext:
-      "The exact same \u2018separation of concerns\u2019 argument was levelled against React in 2013. HN missed it twice.",
-    outcome:
-      "Tailwind CSS became the most-downloaded CSS framework in the world with 100M+ npm downloads per month. It\u2019s now the default CSS framework, period.",
-    pattern: "wrong-approach",
   },
   {
     id: "warp",
@@ -478,29 +556,34 @@ export const posts: Post[] = [
     year: 2022,
     hnThreadUrl: "https://news.ycombinator.com/item?id=30921231",
     hnPostTitle: "Show HN: Warp, a Rust-based terminal",
-    dismissiveQuotes: [
+    editorialContext:
+      "Warp’s launch prompted objections to mandatory login, telemetry, licensing, and venture funding for a terminal.",
+    outcome:
+      "Warp announced a $50 million Series B led by Sequoia in June 2023.",
+    category: "Developer tools",
+    coverColor: "#4e526f",
+    coverTitle: "A new window to the terminal",
+    description: "Even a command line can start an argument.",
+    nuance:
+      "Funding is not proof of profitability or a rebuttal to privacy concerns. This milestone says what was funded, not that every objection was resolved.",
+    outcomeSource: {
+      label: "Warp Series B announcement",
+      url: "https://www.warp.dev/blog/warp-drive-series-b",
+      date: "June 2023",
+    },
+    discussionDate: "2022-04-05",
+    quotes: [
       {
         text: "No one should use a for-profit terminal emulator, especially one created by a VC-backed startup, full stop.",
         author: "smt88",
+        url: "https://news.ycombinator.com/item?id=30934144",
       },
       {
-        text: "Downloaded the image, installed it and was greeted by a mandatory login. Next step was uninstall and delete the dmg image. What a waste of time.",
+        text: "downloaded the image, installed it and was greeted by a mandatory login. Next step was uninstall and delete the dmg image. What a waste of time.",
         author: "lodovic",
-      },
-      {
-        text: "You like people to contribute for free but refuse to give them an actual FOSS client. This is bound to fail.",
-        author: "wildmanx",
-      },
-      {
-        text: "Warp\u2019s VC decide they want an exit and Warp becomes 50usd/month SaaS. Your workflow, scripts, etc. are basically dead.",
-        author: "wraptile",
+        url: "https://news.ycombinator.com/item?id=30941066",
       },
     ],
-    editorialContext:
-      "A VC-backed terminal that requires login and collects telemetry? HN reached for the pitchforks. The thread read like a restraining order.",
-    outcome:
-      "Warp raised a $50M Series B led by Sequoia Capital and grew to over 500,000 engineers on the platform.",
-    pattern: "wrong-approach",
   },
   {
     id: "bun",
@@ -510,56 +593,69 @@ export const posts: Post[] = [
     hnThreadUrl: "https://news.ycombinator.com/item?id=31993429",
     hnPostTitle:
       "Bun: Fast JavaScript runtime, transpiler, and NPM client written in Zig",
-    dismissiveQuotes: [
+    editorialContext:
+      "Bun combined a runtime, package manager, and tooling. Commenters worried about ambition and compatibility with Node.js.",
+    outcome: "Anthropic announced its acquisition of Bun in December 2025.",
+    category: "Developer tools",
+    coverColor: "#69583f",
+    coverTitle: "A faster kind of bun",
+    description: "How much JavaScript tooling fits in one toolkit?",
+    nuance:
+      "An acquisition does not prove complete compatibility. Teams still need to test their own applications before changing runtimes.",
+    outcomeSource: {
+      label: "Anthropic acquires Bun",
+      url: "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone",
+      date: "December 2025",
+    },
+    discussionDate: "2022-07-05",
+    quotes: [
       {
         text: "I love these super-ambitious projects (see Parcel, Rome.js) because after several years they will still fail in many areas at once!",
         author: "wonderbore",
+        url: "https://news.ycombinator.com/item?id=31998967",
       },
       {
-        text: "Moving to a reimplementation of core Node APIs is a terrifying prospect.",
+        text: "moving to a reimplementation of core Node APIs is a terrifying prospect.",
         author: "julienb_sea",
-      },
-      {
-        text: "Something has done a bit wrong if you\u2019re running any of those tools in production.",
-        author: "onion2k",
+        url: "https://news.ycombinator.com/item?id=31994101",
       },
     ],
-    editorialContext:
-      "One commenter preemptively grouped Bun with Parcel and Rome.js, ambitious projects that burned out. 1,431 upvotes said otherwise.",
-    outcome:
-      "Bun 1.0 shipped 14 months later. In December 2025, Bun was acquired by Anthropic to power Claude Code and its AI coding infrastructure.",
-    pattern: "tried-before",
   },
   {
     id: "chatgpt",
     companyName: "ChatGPT",
-    month: "December",
+    month: "November",
     year: 2022,
     hnThreadUrl: "https://news.ycombinator.com/item?id=33804874",
-    hnPostTitle: "OpenAI ChatGPT: Optimizing language models for dialogue",
-    dismissiveQuotes: [
-      {
-        text: "I asked the chatbot broad questions and got answers that were straight-up false. These chatbots instill a delusion of consciousness in people. Every new technology has initially had cases where people could be deluded into thinking it was magic.",
-        author: "joe_the_user",
-      },
+    hnPostTitle: "ChatGPT: Optimizing language models for dialogue",
+    editorialContext:
+      "Early ChatGPT users found an engaging conversational interface alongside false answers and an uneven tone.",
+    outcome:
+      "In March 2026, OpenAI reported that ChatGPT had more than 900 million weekly active users.",
+    category: "AI & agents",
+    coverColor: "#426f61",
+    coverTitle: "A conversation begins",
+    description: "Fluent answers. Difficult questions.",
+    nuance:
+      "Fluency is not accuracy. Adoption is not evidence that a particular answer is reliable. The concerns about false answers deserve to be evaluated separately from audience size.",
+    outcomeSource: {
+      label: "OpenAI’s March 2026 update",
+      url: "https://openai.com/index/accelerating-the-next-phase-ai/",
+      date: "March 2026",
+    },
+    discussionDate: "2022-11-30",
+    quotes: [
       {
         text: "The complete lack of humour or wit is what breaks the illusion for me. Its responses are extremely human-like, but mind-numbingly dull.",
         author: "jw1224",
+        url: "https://news.ycombinator.com/item?id=33808898",
       },
       {
-        text: "What if the real result of \u2018AI safety\u2019 is making models like this boring as hell?",
-        author: "slibhb",
-      },
-      {
-        text: "It\u2019s interesting how ChatGPT feels much more filtered, reserved, and somehow judgmental than GPT-3.",
+        text: "It's interesting how ChatGPT feels much more filtered, reserved, and somehow judgmental than GPT-3.",
         author: "yawnxyz",
+        url: "https://news.ycombinator.com/item?id=33808731",
       },
     ],
-    editorialContext:
-      "Posted the same day ChatGPT launched. Commenters called it dull, filtered, and delusional. It hit 100 million users in two months.",
-    outcome:
-      "In March 2026, OpenAI closed a funding round with $122 billion in committed capital at an $852 billion post-money valuation. ChatGPT now has more than 900 million weekly active users.",
-    pattern: "nobody-wants-this",
   },
   {
     id: "cursor",
@@ -568,25 +664,34 @@ export const posts: Post[] = [
     year: 2023,
     hnThreadUrl: "https://news.ycombinator.com/item?id=35285047",
     hnPostTitle: "Cursor: A code editor built for programming with AI",
-    dismissiveQuotes: [
+    editorialContext:
+      "Cursor brought AI into a code editor. Commenters asked what the product actually did and why they should use it instead of adding AI to an existing editor.",
+    outcome:
+      "In November 2025, Cursor announced a $2.3 billion Series D at a $29.3 billion post-money valuation.",
+    category: "AI & agents",
+    coverColor: "#4d4b46",
+    coverTitle: "The editor writes back",
+    description: "An assistant moves into the place where code lives.",
+    nuance:
+      "A financing valuation is not revenue, profit, or proof of lasting advantage. Reliability and vendor dependence still deserve scrutiny.",
+    outcomeSource: {
+      label: "Cursor Series D announcement",
+      url: "https://cursor.com/blog/series-d",
+      date: "November 2025",
+    },
+    discussionDate: "2023-03-24",
+    quotes: [
       {
-        text: "There\u2019s nothing on the official website or GitHub that indicates what this software is, other than a cropped screenshot that looks like VSCode with a prompt pop up over it.",
+        text: "There's nothing on the official website or GitHub that indicates what this software is, other than a cropped screenshot that looks like vscode with a prompt pop up over it.",
         author: "yakaccount4",
+        url: "https://news.ycombinator.com/item?id=35286151",
       },
       {
-        text: "So looking through the dependencies, it\u2019s CodeMirror with a VSCode theme on top of it, that includes Copilot. Why wouldn\u2019t I just use an existing editor with Copilot support?",
+        text: "So looking through the dependencies, it's CodeMirror with a VsCode theme on top of it, that includes Copilot. Why wouldn't I just use an existing editor with Copilot support?",
         author: "Deukhoofd",
-      },
-      {
-        text: "AI is still in an info-phase Bitcoin was in before 2017. Expected to see an avalanche of fake/fraud/phony products based on it.",
-        author: "wruza",
+        url: "https://news.ycombinator.com/item?id=35286547",
       },
     ],
-    editorialContext:
-      "The first Show HN got just 14 upvotes. Fourteen. The thread had 5 comments. One commenter couldn\u2019t tell if it was \u2018some sarcastic joke software.\u2019",
-    outcome:
-      "By 2025, 1 billion lines of code were being written on Cursor every day. In November 2025, Anysphere raised $2.3 billion in Series D funding at a $29.3 billion post-money valuation, and Cursor surpassed $1 billion in annualized revenue.",
-    pattern: "hype-cycle",
   },
   {
     id: "windsurf",
@@ -594,30 +699,35 @@ export const posts: Post[] = [
     month: "November",
     year: 2024,
     hnThreadUrl: "https://news.ycombinator.com/item?id=42127882",
-    hnPostTitle: "Show HN: Windsurf \u2014 Agentic IDE",
-    dismissiveQuotes: [
+    hnPostTitle: "Show HN: Windsurf – Agentic IDE",
+    editorialContext:
+      "Windsurf entered a crowded field of AI coding tools. Its thread questioned differentiation and the durability of the business.",
+    outcome:
+      "Cognition announced an agreement to acquire Windsurf in July 2025 after some of its leadership and researchers moved to Google.",
+    category: "AI & agents",
+    coverColor: "#3e7773",
+    coverTitle: "Following a new current",
+    description: "A coding assistant, and a changing company.",
+    nuance:
+      "Google did not acquire the entire company. The team move and Cognition’s acquisition agreement were different events; the cited announcement gives no purchase price.",
+    outcomeSource: {
+      label: "Cognition acquisition announcement",
+      url: "https://cognition.com/blog/windsurf",
+      date: "July 2025",
+    },
+    discussionDate: "2024-11-13",
+    quotes: [
       {
-        text: "While and after watching the video, I wasn\u2019t sure if the whole thing isn\u2019t just a parody of AI companies.",
-        author: "j-pb",
-      },
-      {
-        text: "It\u2019s a cool idea but I really don\u2019t see how this is any different from Cursor IDE.",
+        text: "It's a cool idea but i really don't see how this is any diff from Cursor IDE.",
         author: "ned99",
+        url: "https://news.ycombinator.com/item?id=42142586",
       },
       {
-        text: "Of course it\u2019s not going to be sustainable.",
+        text: "Of course it's not going to be sustainable.",
         author: "agluszak",
-      },
-      {
-        text: "Totally useless and I\u2019m sure I will not be subscribing to it at any cost. It gets easily confused and cannot troubleshoot or understand a bit of the environment.",
-        author: "indianmouse",
+        url: "https://news.ycombinator.com/item?id=42142854",
       },
     ],
-    editorialContext:
-      "One commenter thought the entire launch video was a parody. Another gave it exactly three minutes before declaring judgment.",
-    outcome:
-      "Windsurf was acquired in a deal worth $2.4 billion, with its CEO and key employees joining Google.",
-    pattern: "drive-by-dismissal",
   },
   {
     id: "claude-code",
@@ -626,67 +736,69 @@ export const posts: Post[] = [
     year: 2025,
     hnThreadUrl: "https://news.ycombinator.com/item?id=43163011",
     hnPostTitle: "Claude 3.7 Sonnet and Claude Code",
-    dismissiveQuotes: [
+    editorialContext:
+      "Claude Code launched alongside Claude 3.7 Sonnet. Some commenters questioned the terminal interface and the cost of watching an agent work.",
+    outcome:
+      "Anthropic reported that Claude Code reached $1 billion in run-rate revenue six months after public availability.",
+    category: "AI & agents",
+    coverColor: "#aa6950",
+    coverTitle: "A collaborator in the terminal",
+    description: "An agent at the command line, with a meter running.",
+    nuance:
+      "Run-rate revenue is an annualized pace, not a year of booked revenue. Growth does not resolve an individual developer’s cost or reliability concerns.",
+    outcomeSource: {
+      label: "Anthropic’s Claude Code milestone",
+      url: "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone",
+      date: "December 2025",
+    },
+    discussionDate: "2025-02-24",
+    quotes: [
       {
-        text: "It\u2019s clear that progress is incremental at this point. Anthropic and OpenAI are bleeding money. It\u2019s unclear to me how they\u2019ll shift to making money while providing almost no enhanced value.",
-        author: "mikae1",
-      },
-      {
-        text: "I paid for it for a while, but I kept running out of usage limits right in the middle of work every day. I don\u2019t recommend using it in a professional setting.",
-        author: "mianos",
-      },
-      {
-        text: "It's not hard to make, it's a relatively simple CLI tool so there's no moat.",
-        author: "sangnoir",
-      },
-      {
-        text: "Watching Claude Code fumble around... all while burning actual dollars and context is the opposite of endearing.",
-        author: "whywhywhywhy",
-      },
-      {
-        text: "Tried claude code, and have an empty unresponsive terminal. Looks cool in the demo though, but not sure this is going to perform better than Cursor, and shipping this as an interactive CLI instead of an extension is... a choice.",
+        text: "Tried claude code, and have an empty unresponsive terminal.",
         author: "frankfrank13",
+        url: "https://news.ycombinator.com/item?id=43163319",
+      },
+      {
+        text: "Watching Claude Code fumble around trying to edit text and double checking the hex output of a .cpp file and cd around a folder all while burning actual dollars and context is the opposite of endearing.",
+        author: "whywhywhywhy",
+        url: "https://news.ycombinator.com/item?id=43168115",
       },
     ],
-    editorialContext:
-      "Critics focused on rate limits and cost. The thread got 2,127 points and 963 comments. People cared more than they let on.",
-    outcome:
-      "Claude Code hit $1B in annualized revenue within 6 months of GA, faster than ChatGPT. By early 2026 it surpassed $2.5B ARR.",
-    pattern: "wrong-approach",
   },
   {
     id: "openclaw",
     companyName: "OpenClaw",
-    month: "February",
+    month: "January",
     year: 2026,
     hnThreadUrl: "https://news.ycombinator.com/item?id=46760237",
-    hnPostTitle: "Clawdbot \u2013 open source personal AI assistant",
-    dismissiveQuotes: [
+    hnPostTitle: "Clawdbot - open source personal AI assistant",
+    editorialContext:
+      "The OpenClaw discussion raised concrete concerns about permissions, credentials, token costs, and autonomous access to a computer.",
+    outcome:
+      "Creator Peter Steinberger announced in February 2026 that he was joining OpenAI and that OpenClaw would move to an independent foundation.",
+    category: "AI & agents",
+    coverColor: "#944b40",
+    coverTitle: "An agent of its own",
+    description: "What happens when an assistant can take action?",
+    nuance:
+      "Attention and GitHub stars do not establish safety. Security objections need technical answers. A founder joining a company is not an acquisition of the project.",
+    outcomeSource: {
+      label: "Peter Steinberger’s announcement",
+      url: "https://steipete.me/posts/2026/openclaw",
+      date: "February 2026",
+    },
+    discussionDate: "2026-01-26",
+    quotes: [
       {
-        text: "This thing chews through tokens. I\u2019ve spent $300+ in the last 2 days doing fairly basic tasks. Also, it\u2019s terrifying \u2014 no directory sandboxing. It can modify anything on my machine.",
-        author: "mgdev",
-      },
-      {
-        text: "There are 300 open GitHub issues. One of them is a security report claiming hundreds of high-risk issues, including hard-coded, unencrypted OAuth credentials. I am disinclined to install this software.",
-        author: "xtagon",
-      },
-      {
-        text: "I just don\u2019t trust an AI enough to run unprompted with root access to a machine 24/7. Most of the cool stuff here you can also just vibecode in an afternoon using regular Claude Code.",
-        author: "vanillameow",
-      },
-      {
-        text: "Layers and layers of security practices over the past decade are just going out the window. It\u2019s quite wild to give root access to a process that has access to the internet without any guardrails.",
+        text: "It's quite wild to give root access to a process that has access to the internet without any guardrails.",
         author: "suriya-ganesh",
+        url: "https://news.ycombinator.com/item?id=46760878",
       },
       {
-        text: "This is all starting to feel like the productivity theater rabbit hole people went down with Notion/Obsidian. It is clearly capable of doing a lot of stuff, but where is the real impact?",
+        text: "It is clearly capable of doing a lot of stuff, but where is the real impact?",
         author: "blainstorming",
+        url: "https://news.ycombinator.com/item?id=46760574",
       },
     ],
-    editorialContext:
-      "The project hit 60,000 GitHub stars overnight. Critics called it hype. Then Anthropic asked for a name change, and OpenAI acquired the creator.",
-    outcome:
-      "Creator Peter Steinberger joined OpenAI to work on AI agents. The project surpassed 145,000+ GitHub stars and spawned dozens of derivative projects.",
-    pattern: "hype-cycle",
   },
 ];
