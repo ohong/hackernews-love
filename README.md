@@ -1,15 +1,33 @@
-# HN Didn't Love It
+# Hacker News Love
 
-A curated collection of dismissive Hacker News comments about companies that went on to become billion-dollar successes.
+**Good ideas. Mixed reviews.** A browsable library of first impressions, later milestones, and unresolved questions from the Hacker News archives.
 
-From Dropbox ("I can build this with FTP and SVN") to ChatGPT ("mind-numbingly dull"), every entry pairs the original skepticism with the eventual outcome.
+[Visit the site](https://hackernews.love)
 
-**[Check it out →](https://hackernews.love)**
+## Development
 
-## Adding a suggestion
+```sh
+bun install
+bun run dev
+```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+## Verification
 
-## Stack
+```sh
+bun run check
+bunx playwright install chromium webkit
+bun run test:e2e
+bun run verify:quotes
+```
 
-TypeScript, Next.js, Tailwind CSS, deployed on Vercel.
+Browser tests use the production build on port 3007. The quote audit checks live HN records through Algolia; it needs network access. Browser tests do not depend on third-party sites being available.
+
+## Structure
+
+- `data/posts.ts` is the source of truth for stories, cover identities, comment permalinks, and dated sources.
+- `/` contains the interactive bookshelf and collection. Search, topic, sort, and view are stored in the URL.
+- `/stories/[id]` prerenders each reading page. Content and links work without JavaScript.
+- Saved stories stay in the current browser, with an in-memory fallback when storage is blocked.
+- CSS supplies book depth and restrained motion. No WebGL or animation runtime is required.
+
+[Contributing](CONTRIBUTING.md) · [Design and verification notes](docs/redesign.md) · [Artwork provenance](docs/artwork.md)

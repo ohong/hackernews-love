@@ -1,15 +1,19 @@
-export type DismissalPattern =
-  | "build-it-yourself"
-  | "its-illegal"
-  | "tried-before"
-  | "hype-cycle"
-  | "drive-by-dismissal"
-  | "nobody-wants-this"
-  | "wrong-approach";
+export const categories = [
+  "Everyday life",
+  "Developer tools",
+  "AI & agents",
+] as const;
+export type Category = (typeof categories)[number];
 
-export interface DismissiveQuote {
+export interface CommentQuote {
   text: string;
   author: string;
+  url: string;
+}
+
+export interface Source {
+  label: string;
+  url: string;
 }
 
 export interface Post {
@@ -17,20 +21,17 @@ export interface Post {
   companyName: string;
   month: string;
   year: number;
+  discussionDate: string;
   hnThreadUrl: string;
   hnPostTitle: string;
-  dismissiveQuotes: DismissiveQuote[];
+  quotes: CommentQuote[];
   editorialContext: string;
   outcome: string;
-  pattern: DismissalPattern;
+  category: Category;
+  coverColor: string;
+  coverTitle: string;
+  description: string;
+  nuance: string;
+  outcomeSource: Source & { date: string };
+  contextSource?: Source;
 }
-
-export const patternLabels: Record<DismissalPattern, string> = {
-  "build-it-yourself": "I can build this myself",
-  "its-illegal": "It's illegal",
-  "tried-before": "Tried before, failed",
-  "hype-cycle": "Just hype",
-  "drive-by-dismissal": "Drive-by dismissal",
-  "nobody-wants-this": "Nobody wants this",
-  "wrong-approach": "Wrong approach",
-};
