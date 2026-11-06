@@ -550,6 +550,62 @@ export const posts: Post[] = [
     ],
   },
   {
+    id: "synthesia",
+    companyName: "Synthesia",
+    discussionDate: "2021-05-29",
+    month: "May",
+    year: 2021,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=27328205",
+    hnPostTitle: "Create AI videos by simply typing in text",
+    editorialContext: "An early Synthesia discussion asked who would want to watch AI presenters. Other commenters saw uses in training, education, and marketing.",
+    outcome: "Synthesia reported approximately $140 million in annual recurring revenue in February 2026.",
+    category: "AI & agents",
+    coverColor: "#566d78",
+    coverTitle: "A presenter made of pixels",
+    description: "A script, an avatar, and a question about who would watch.",
+    nuance: "The 2021 discussion was mixed. Subscription revenue shows demand, but does not answer every objection to artificial presenters or make the original videos less uncanny.",
+    outcomeSource: {
+      label: "Synthesia’s revenue retrospective",
+      url: "https://www.synthesia.io/post/how-we-scaled-our-billing-system-from-40m-to-140m-arr",
+      date: "February 2026"
+    },
+    quotes: [
+      {
+        text: "Can you think of one good use for this product?",
+        author: "question000",
+        url: "https://news.ycombinator.com/item?id=27329887"
+      }
+    ]
+  },
+  {
+    id: "runway",
+    companyName: "Runway",
+    discussionDate: "2021-07-07",
+    month: "July",
+    year: 2021,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=27766655",
+    hnPostTitle: "Runway – Create impossible video",
+    editorialContext: "A commenter with professional editing and VFX experience questioned whether Runway could earn a place beside established production tools.",
+    outcome: "Runway’s later generative video tools were used to create stage visuals for Madonna’s 2023–24 Celebration Tour.",
+    category: "AI & agents",
+    coverColor: "#6c6554",
+    coverTitle: "A place in the production",
+    description: "An experiment in video finds its way onto a world stage.",
+    nuance: "The 2021 criticism concerned the early editor’s scope and switching costs. The tour used later Gen-1 and Gen-2 tools. Professional use does not mean the original editor replaced established VFX software.",
+    outcomeSource: {
+      label: "Madonna’s tour content director on using Runway",
+      url: "https://runway.com/customers/generating-new-worlds-for-madonnas-celebration-tour",
+      date: "2023–24 tour"
+    },
+    quotes: [
+      {
+        text: "This will not get used among professionals.",
+        author: "DoctorOW",
+        url: "https://news.ycombinator.com/item?id=27768165"
+      }
+    ]
+  },
+  {
     id: "warp",
     companyName: "Warp",
     month: "April",
@@ -584,6 +640,34 @@ export const posts: Post[] = [
         url: "https://news.ycombinator.com/item?id=30941066",
       },
     ],
+  },
+  {
+    id: "hugging-face",
+    companyName: "Hugging Face",
+    discussionDate: "2022-05-09",
+    month: "May",
+    year: 2022,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=31314026",
+    hnPostTitle: "We raised $100M for open and collaborative machine learning",
+    editorialContext: "Hugging Face’s Series C announcement prompted questions about how an open model hub could earn money. Some commenters saw hosting; others saw a valuable developer community.",
+    outcome: "NVIDIA announced an agreement to acquire Hugging Face for $12.93 billion in September 2026. It reported more than 18 million people using the platform.",
+    category: "AI & agents",
+    coverColor: "#a47a37",
+    coverTitle: "A home for open models",
+    description: "Could hosting other people’s models become a lasting business?",
+    nuance: "This was a funding discussion about an established company. The quoted commenter acknowledged the community’s value while questioning monetization. NVIDIA announced an acquisition agreement; a completed transaction is not established by that announcement.",
+    outcomeSource: {
+      label: "NVIDIA’s Hugging Face acquisition agreement",
+      url: "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+      date: "September 2026"
+    },
+    quotes: [
+      {
+        text: "Also, HF doesn't really have any technical moat. Other people research and train those models, they just provide the hosting.",
+        author: "fxtentacle",
+        url: "https://news.ycombinator.com/item?id=31317978"
+      }
+    ]
   },
   {
     id: "bun",
@@ -692,6 +776,154 @@ export const posts: Post[] = [
         url: "https://news.ycombinator.com/item?id=35286547",
       },
     ],
+  },
+  {
+    id: "langchain",
+    companyName: "LangChain",
+    discussionDate: "2023-07-08",
+    month: "July",
+    year: 2023,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=36645575",
+    hnPostTitle: "Langchain Is Pointless",
+    editorialContext: "About nine months after LangChain’s first package commit, an HN discussion challenged its abstractions. Some developers preferred calling model APIs directly.",
+    outcome: "In October 2025, LangChain reported that 35% of the Fortune 500 used its services. LangChain and LangGraph had a combined 90 million monthly downloads.",
+    category: "AI & agents",
+    coverColor: "#536c5f",
+    coverTitle: "The chain that kept growing",
+    description: "A library called pointless becomes an ecosystem for agents.",
+    nuance: "LangChain expanded into LangGraph and LangSmith and rewrote its original package. Later adoption does not disprove criticism of the 2023 code. Download counts do not measure unique developers.",
+    outcomeSource: {
+      label: "LangChain’s platform and adoption announcement",
+      url: "https://www.langchain.com/blog/series-b",
+      date: "October 2025"
+    },
+    quotes: [
+      {
+        text: "Everyone was so hyped up by this useless thing that I thought I was going crazy.",
+        author: "anonzzzies",
+        url: "https://news.ycombinator.com/item?id=36652133"
+      }
+    ]
+  },
+  {
+    id: "devin",
+    companyName: "Devin",
+    discussionDate: "2024-03-12",
+    month: "March",
+    year: 2024,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=39679787",
+    hnPostTitle: "Devin: AI Software Engineer",
+    editorialContext: "Devin’s launch drew a large debate about autonomous software engineering. Commenters questioned whether the agent could do useful work beyond its demonstration.",
+    outcome: "Cognition reported that Devin reached $73 million in annual recurring revenue in June 2025, before it acquired Windsurf.",
+    category: "AI & agents",
+    coverColor: "#48677b",
+    coverTitle: "An engineer of its own",
+    description: "A coding agent launches into a debate about what it can do.",
+    nuance: "The revenue figure is specific to Devin before the Windsurf acquisition. Commercial adoption does not establish how well the launch version performed or settle separate criticism of its demonstration.",
+    outcomeSource: {
+      label: "Cognition’s standalone Devin revenue milestone",
+      url: "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+      date: "September 2025"
+    },
+    quotes: [
+      {
+        text: "I guarantee this product actually sucks and is totally useless in practice.",
+        author: "jackblemming",
+        url: "https://news.ycombinator.com/item?id=39681576"
+      }
+    ]
+  },
+  {
+    id: "suno",
+    companyName: "Suno",
+    discussionDate: "2024-03-18",
+    month: "March",
+    year: 2024,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=39746163",
+    hnPostTitle: "Suno, an AI music generator",
+    editorialContext: "Suno’s early discussion mixed enthusiasm with doubts about creative control and lasting interest. One commenter expected the novelty of generating songs to fade.",
+    outcome: "Suno reported more than two million paid subscribers as of early 2026 and a $300 million annual revenue run rate.",
+    category: "AI & agents",
+    coverColor: "#895760",
+    coverTitle: "A song from a sentence",
+    description: "Would making music with a prompt remain more than a novelty?",
+    nuance: "The full comment argues that music requires taste and ideas. Paid adoption shows demand, but does not settle artistic quality, copyright concerns, or long-term retention. Many early commenters were enthusiastic.",
+    outcomeSource: {
+      label: "Suno’s company subscriber and revenue figures",
+      url: "https://about.suno.com/careers",
+      date: "Source checked October 2026"
+    },
+    quotes: [
+      {
+        text: "after a while the novelty will wear off",
+        author: "chasing",
+        url: "https://news.ycombinator.com/item?id=39750611"
+      }
+    ]
+  },
+  {
+    id: "lovable",
+    companyName: "Lovable",
+    discussionDate: "2024-08-28",
+    month: "August",
+    year: 2024,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=41380814",
+    hnPostTitle: "Show HN: Claude Artifacts but creating real web apps",
+    editorialContext: "The founders introduced gptengineer.app on HN before renaming it Lovable. Commenters questioned whether an AI app builder could move beyond basic applications.",
+    outcome: "Lovable reported $200 million in annual recurring revenue in November 2025, with 100,000 new projects created daily.",
+    category: "AI & agents",
+    coverColor: "#96695c",
+    coverTitle: "From a prompt to a product",
+    description: "A builder for basic apps grows into a business of its own.",
+    nuance: "The discussion concerned the August 2024 beta, then called gptengineer.app. Revenue establishes demand, but does not prove that the early version could build every complex application.",
+    outcomeSource: {
+      label: "Lovable’s first-year revenue milestone",
+      url: "https://lovable.dev/blog/one-year-of-lovable",
+      date: "November 2025"
+    },
+    contextSource: {
+      label: "The founder’s Lovable launch and former product name",
+      url: "https://news.ycombinator.com/item?id=42206666"
+    },
+    quotes: [
+      {
+        text: "This is good for like basic apps and stuff but nothing major beyond that",
+        author: "ilrwbwrkhv",
+        url: "https://news.ycombinator.com/item?id=41382639"
+      }
+    ]
+  },
+  {
+    id: "notebooklm",
+    companyName: "NotebookLM",
+    discussionDate: "2024-09-30",
+    month: "September",
+    year: 2024,
+    hnThreadUrl: "https://news.ycombinator.com/item?id=41693087",
+    hnPostTitle: "NotebookLM's automatically generated podcasts are surprisingly effective",
+    editorialContext: "NotebookLM’s new Audio Overviews drew praise and sharp dissent. Some commenters questioned whether a synthetic conversation could add value to the source material.",
+    outcome: "Google reported more than 30 million people and 600,000 organizations using NotebookLM in July 2026, when it renamed the product Gemini Notebook.",
+    category: "AI & agents",
+    coverColor: "#655f83",
+    coverTitle: "A conversation with your notes",
+    description: "Research notes find a voice, and an audience.",
+    nuance: "The thread’s title and many replies were positive. The quote disputes the value of synthetic discussion. The user figure covers the full product, while generated audio duration does not measure listening time.",
+    outcomeSource: {
+      label: "Google’s NotebookLM adoption and renaming announcement",
+      url: "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      date: "July 2026"
+    },
+    contextSource: {
+      label: "Google’s early Audio Overviews usage figures",
+      url: "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-new-features-december-2024/"
+    },
+    quotes: [
+      {
+        text: "completely and utterly worthless",
+        author: "handelaar",
+        url: "https://news.ycombinator.com/item?id=41697066"
+      }
+    ]
   },
   {
     id: "windsurf",
