@@ -78,6 +78,8 @@ These are local production-build results, not a public deployment test. Device p
 
 ## Review screenshots
 
+[Matched before-and-after screenshots](before-after.md) compare the original home and Dropbox entry with the committed redesign.
+
 ![Desktop browsing shelf](screenshots/home-desktop.webp)
 
 ![Collection](screenshots/collection-desktop.webp)
