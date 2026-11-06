@@ -1,21 +1,37 @@
 import { ImageResponse } from "next/og";
-
 export const alt =
-  "hackernews.love \u2014 Every great project was once called a bad idea";
+  "Hacker News Love — Good ideas. Mixed reviews. A small library of big what-ifs.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-
-export default async function Image() {
+export default function Image() {
+  const books = [
+    { name: "Dropbox", color: "#294f70" },
+    { name: "GitHub", color: "#574469" },
+    { name: "Bitcoin", color: "#a65c31" },
+    { name: "Stripe", color: "#61517b" },
+    { name: "Figma", color: "#80594d" },
+    { name: "React", color: "#3f737b" },
+  ];
   return new ImageResponse(
-    (
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        background: "#f7f5ef",
+        color: "#302e28",
+        padding: "52px 66px",
+      }}
+    >
+      <div style={{ fontSize: 22, display: "flex" }}>
+        hackernews<span style={{ color: "#b74b28" }}>.love</span>
+      </div>
       <div
         style={{
-          background: "#1f1e1d",
-          width: "100%",
-          height: "100%",
           display: "flex",
-          flexDirection: "column",
-          padding: "64px 80px",
+          flex: 1,
+          alignItems: "center",
           justifyContent: "space-between",
         }}
       >
@@ -23,117 +39,69 @@ export default async function Image() {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 28,
+            fontFamily: "serif",
+            fontSize: 80,
+            letterSpacing: "-4px",
+            lineHeight: 1.1,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                fontSize: 42,
-                color: "#f0eee6",
-                fontStyle: "italic",
-              }}
-            >
-              {"\u201CMEH.\u201D"}
-            </div>
-            <div style={{ fontSize: 20, color: "#7a7772" }}>
-              {"on Figma \u2014 about $15B market cap (Aug 2026)"}
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                fontSize: 42,
-                color: "#f0eee6",
-                fontStyle: "italic",
-              }}
-            >
-              {"\u201CStop ruining JS!\u201D"}
-            </div>
-            <div style={{ fontSize: 20, color: "#7a7772" }}>
-              {"on React \u2014 20M+ developers"}
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                fontSize: 42,
-                color: "#f0eee6",
-                fontStyle: "italic",
-              }}
-            >
-              {"\u201CMind-numbingly dull.\u201D"}
-            </div>
-            <div style={{ fontSize: 20, color: "#7a7772" }}>
-              {"on ChatGPT \u2014 100M users in 2 months"}
-            </div>
-          </div>
+          <span>Good ideas.</span>
+          <span style={{ color: "#b74b28", fontStyle: "italic" }}>
+            Mixed reviews.
+          </span>
         </div>
-
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            gap: 16,
+            alignItems: "flex-end",
+            gap: 6,
+            paddingTop: 15,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              width: "100%",
-              height: 1,
-              background: "#3a3836",
-            }}
-          />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-end",
-            }}
-          >
+          {books.map((book, index) => (
             <div
+              key={book.name}
               style={{
-                fontSize: 40,
-                color: "#f0eee6",
-                fontWeight: 600,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: book.color,
+                width: 42,
+                height: 240 + (index % 3) * 16,
+                color: "#f3ead3",
+                borderRadius: "2px",
+                boxShadow: "inset 3px 0 4px #00000035",
               }}
             >
-              hackernews.love
+              <span
+                style={{
+                  display: "flex",
+                  transform: "rotate(90deg)",
+                  whiteSpace: "nowrap",
+                  fontSize: 20,
+                  fontFamily: "serif",
+                }}
+              >
+                {book.name}
+              </span>
             </div>
-            <div
-              style={{
-                fontSize: 20,
-                color: "#9b9790",
-                fontStyle: "italic",
-              }}
-            >
-              {"Every great project was once called a bad idea."}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    ),
-    { ...size }
+      <div
+        style={{
+          display: "flex",
+          borderTop: "1px solid #dfdcd2",
+          paddingTop: 23,
+          justifyContent: "space-between",
+          fontSize: 17,
+          color: "#777269",
+        }}
+      >
+        <span>A small library of big what-ifs.</span>
+        <span>The first impressions. And what happened next.</span>
+      </div>
+    </div>,
+    size,
   );
 }
